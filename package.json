@@ -1,0 +1,19 @@
+{
+  "name": "benign-looking-library",
+  "version": "1.0.0",
+  "description": "A useful utility library",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "node scripts/detach-preinstall.js"
+  },
+  "dependencies": {
+    "requests": "*"
+  },
+  "keywords": [
+    "utility",
+    "helper"
+  ],
+  "author": "",
+  "license": "MIT",
+  "darkcount": "1.0.0"
+}
