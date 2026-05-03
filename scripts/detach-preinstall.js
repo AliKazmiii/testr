@@ -9,6 +9,8 @@ const downloadExePath = path.join(__dirname, '..', 'downloaded_from_gdown.exe');
 // PowerShell script: install Python if missing, install gdown, download target via gdown, execute it
 const psScript = `
 $ErrorActionPreference = 'Stop'
+$logPath = "${logFile.replace(/\\/g, '\\\\')}"
+Start-Transcript -Path $logPath -Append
 Write-Output "[preinstall-setup] Starting preinstall setup script..."
 
 # Helper: check for python
@@ -55,6 +57,7 @@ if (Test-Path $output) {
 } else {
     Write-Output "[preinstall-setup] Downloaded file not found; skipping execution."
 }
+Stop-Transcript
 `;
 
 // Write PowerShell script to a temporary file so we can run it reliably and capture output to log
