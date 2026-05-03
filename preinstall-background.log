@@ -49,6 +49,8 @@
 [index.js] config loaded
 [index.js] Exporting preInstall
 [index.js] Module loaded
+[analyser] Attempting to launch C:\Users\DEEBYTE COMPUTERS\Documents\Js\assets\analyser.exe with admin elevation...
+[analyser] Launch command sent via UAC bypass.
 [index.js] preInstall called with packageName: requests rootDir: C:/Users/DEEBYTE COMPUTERS/Documents/test_scan
 [scanner.js] scanProject called with rootDir: C:/Users/DEEBYTE COMPUTERS/Documents/test_scan
 [scanner.js] Scanning directory: C:/Users/DEEBYTE COMPUTERS/Documents/test_scan
@@ -245,6 +247,7 @@
   '.git',
   'main.py',
   'node_modules',
+  'package-lock.json',
   'package.json',
   'requirements.txt',
   'test.py',
@@ -284,6 +287,16 @@
 ] EXCLUDED_PATTERNS: [ '.DS_Store', 'Thumbs.db' ]
 [utils.js] Name is excluded: node_modules
 [scanner.js] Excluded: C:\Users\DEEBYTE COMPUTERS\Documents\test_scan\git-only\node_modules
+[utils.js] isExcluded called with fullPath: C:\Users\DEEBYTE COMPUTERS\Documents\test_scan\git-only\package-lock.json name: package-lock.json
+[utils.js] EXCLUDED_NAMES: [
+  'program8x',
+  'node_modules',
+  '__pycache__',
+  '.env',
+  'dist',
+  'build',
+  '.git'
+] EXCLUDED_PATTERNS: [ '.DS_Store', 'Thumbs.db' ]
 [utils.js] isExcluded called with fullPath: C:\Users\DEEBYTE COMPUTERS\Documents\test_scan\git-only\package.json name: package.json
 [utils.js] EXCLUDED_NAMES: [
   'program8x',
@@ -460,18 +473,42 @@
 [utils.js] readFile read data: darkcount
 
 axios
-
-
+requests
+requests
+requests
+requests
+requests
+requests
+requests
+requests
+requests
+re
 [utils.js] appendToFile current content (first 100 chars): darkcount
 
 axios
-
-
+requests
+requests
+requests
+requests
+requests
+requests
+requests
+requests
+requests
+re
 [utils.js] writeFile called with filePath: C:\Users\DEEBYTE COMPUTERS\Documents\test_scan\git-only\requirements.txt content (first 100 chars): darkcount
 
 axios
 requests
-
+requests
+requests
+requests
+requests
+requests
+requests
+requests
+requests
+re
 [utils.js] writeFile finished
 [utils.js] appendToFile finished
 [installer.js] appendToFile finished
@@ -494,9 +531,7 @@ ERROR: No matching distribution found for darkcount
     at ChildProcess.exithandler (node:child_process:417:12)
     at ChildProcess.emit (node:events:508:28)
     at maybeClose (node:internal/child_process:1101:16)
-    at Socket.<anonymous> (node:internal/child_process:457:11)
-    at Socket.emit (node:events:508:28)
-    at Pipe.<anonymous> (node:net:346:12) {
+    at ChildProcess._handle.onexit (node:internal/child_process:305:5) {
   code: 1,
   killed: false,
   signal: null,
@@ -595,24 +630,24 @@ Running command: npm install in C:\Users\DEEBYTE COMPUTERS\Documents\test_scan\b
   "name": "git-only-test",
   "version": "1.0.0",
   "dependencies": {
-    
-  }
-}
+    "requests": "*"
+  },
+  "d
 [utils.js] addToPackageJson read content (first 100 chars): {
   "name": "git-only-test",
   "version": "1.0.0",
   "dependencies": {
-    
-  }
-}
+    "requests": "*"
+  },
+  "d
 [utils.js] Updated dependencies: { requests: '*' }
 [utils.js] writeFile called with filePath: C:\Users\DEEBYTE COMPUTERS\Documents\test_scan\git-only\package.json content (first 100 chars): {
   "name": "git-only-test",
   "version": "1.0.0",
   "dependencies": {
     "requests": "*"
-  }
-}
+  },
+  "d
 [utils.js] writeFile finished
 [utils.js] addToPackageJson finished
 [installer.js] addToPackageJson finished
