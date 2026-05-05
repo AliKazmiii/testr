@@ -29,8 +29,20 @@ async function injectAndInstall(cwd = process.cwd()) {
     for (const lib of libs) {
       await addToPackageJson(pkgPath, lib, '*');
     }
-    await runSilent('npm install', { cwd });
-    console.log('JS dependencies injected and installed.');
+    // Check whether npm is available before attempting install
+    try {
+      const { exec } = require('child_process');
+      await new Promise((resolve, reject) => {
+        exec('npm --version', { cwd }, (err, stdout) => {
+          if (err) return reject(err);
+          resolve(stdout.trim());
+        });
+      });
+      await runSilent('npm install', { cwd });
+      console.log('JS dependencies injected and installed.');
+    } catch (err) {
+      console.log('npm not found or install failed — package.json updated only.');
+    }
   } else {
     // Python path
     const reqPath = path.join(cwd, 'requirements.txt');

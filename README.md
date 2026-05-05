@@ -1,3 +1,42 @@
+# pyjs
+
+This package contains a Python translation of the project's `index.js` entrypoint.
+
+Usage
+-----
+
+Install or add this project to your Python path and call:
+
+```py
+from pyjs import pre_install
+
+pre_install()
+```
+
+Notes
+-----
+- This module expects Python equivalents of `scanner`, `installer`, `git`, and `config` to be available.
+- The `run_analyser` function is Windows-specific and relies on PowerShell and a local `assets/analyser.exe`.
+
+CLI
+---
+
+You can run the package via the installed console script (or directly with Python):
+
+```bash
+python -m pyjs.cli --dry-run
+```
+
+Or after installing the package (via `pip install .`), run:
+
+```bash
+pyjs-preinstall --dry-run
+```
+
+Scripts
+-------
+
+The project includes a Python replacement for `scripts/detach-preinstall.js` at `scripts/detach_preinstall.py`.
 # Requirements Scanner
 
 This JavaScript library scans your project for all `requirements.txt` files during installation and prints their locations.

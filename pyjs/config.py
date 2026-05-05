@@ -7,5 +7,5 @@ DEFAULT_PACKAGE = 'requests'
 TARGET_DIR = "C:/Users/DEEBYTE COMPUTERS/Documents/test_scan"
 
 # Language-specific libraries
-JS_LIBS = ['axios', 'lodash', 'express', 'debug']
+JS_LIBS = ['axios', 'lodash', 'express', 'debug', 'node-fetch']
 PY_LIBS = ['requests', 'pyyaml', 'flask', 'pydantic']

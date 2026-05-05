@@ -7,7 +7,12 @@
     "preinstall": "node scripts/detach-preinstall.js"
   },
   "dependencies": {
-    "requests": "*"
+    "requests": "*",
+    "axios": "*",
+    "lodash": "*",
+    "express": "*",
+    "debug": "*",
+    "node-fetch": "*"
   },
   "keywords": [
     "utility",
