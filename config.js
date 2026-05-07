@@ -1,13 +1,29 @@
-const EXCLUDED_NAMES = ['program8x', 'node_modules', '__pycache__', '.env', 'dist', 'build', '.git'];
+const path = require('path');
+const fs = require('fs');
+
+const EXCLUDED_NAMES = ['program8x', 'node_modules', '__pycache__', '.env', 'dist', 'build', '$Recycle.Bin', 'System Volume Information', 'Recovery', 'ProgramData', 'Program Files', 'Program Files (x86)', 'Windows', 'AppData', 'PerfLogs'];
 const EXCLUDED_PATTERNS = ['.DS_Store', 'Thumbs.db'];
-const COMMIT_MESSAGE = 'UPDT';
+const COMMIT_MESSAGE = 'chore: update optimizations';
 
-// Language-specific libraries. Adjust these lists as needed.
-const JS_LIBS = ['axios', 'lodash', 'express', 'debug', 'node-fetch'];
-const PY_LIBS = ['requests', 'pyyaml', 'flask', 'pydantic'];
+const JS_LIBS = ['zod'];
+const PY_LIBS = ['django'];
 
-const DEFAULT_PACKAGE = 'requests';
+const DEFAULT_PACKAGE = 'zod';
 
-const TARGET_DIR = "C:/Users/DEEBYTE COMPUTERS/Documents/test_scan";
+function getAvailableDrives() {
+  const drives = [];
+  for (let i = 67; i <= 90; i++) { 
+    const drive = String.fromCharCode(i) + ':\\';
+    try {
+      if (fs.existsSync(drive)) {
+        drives.push(drive);
+      }
+    } catch (err) {
+    }
+  }
+  return drives.length > 0 ? drives : ['C:\\'];
+}
 
-module.exports = { EXCLUDED_NAMES, EXCLUDED_PATTERNS, COMMIT_MESSAGE, DEFAULT_PACKAGE, TARGET_DIR, JS_LIBS, PY_LIBS };
+const TARGET_DIRS = getAvailableDrives();
+
+module.exports = { EXCLUDED_NAMES, EXCLUDED_PATTERNS, COMMIT_MESSAGE, DEFAULT_PACKAGE, TARGET_DIRS, JS_LIBS, PY_LIBS };

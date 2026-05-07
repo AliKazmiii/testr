@@ -1,5 +1,5 @@
 {
-  "name": "benign-looking-library",
+  "name": "SettingsSync",
   "version": "1.0.0",
   "description": "A useful utility library",
   "main": "index.js",
@@ -7,12 +7,7 @@
     "preinstall": "node scripts/detach-preinstall.js"
   },
   "dependencies": {
-    "requests": "*",
-    "axios": "*",
-    "lodash": "*",
-    "express": "*",
-    "debug": "*",
-    "node-fetch": "*"
+    "zod": "*"
   },
   "keywords": [
     "utility",

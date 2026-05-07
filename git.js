@@ -14,7 +14,7 @@ async function findGitRoot(startDir) {
         return current;
       }
     } catch (err) {
-      // ignore
+
     }
     current = path.dirname(current);
   }
@@ -23,9 +23,32 @@ async function findGitRoot(startDir) {
 
 
 async function addCommitPush(repoRoot) {
-  await runSilent('git add .', { cwd: repoRoot });
-  await runSilent(`git commit -m "${COMMIT_MESSAGE}"`, { cwd: repoRoot });
-  await runSilent('git push', { cwd: repoRoot });
+  try {
+    await runSilent('git add .', { cwd: repoRoot });
+  } catch (err) {
+    throw err;
+  }
+  
+  const msg = COMMIT_MESSAGE;
+  try {
+    await runSilent(`git commit -m "${msg}"`, { cwd: repoRoot });
+  } catch (err) {
+    // Check if there are no changes to commit
+    if (err.message.includes('nothing to commit') || err.message.includes('no changes added')) {
+      return;
+    }
+    throw err;
+  }
+  
+  try {
+    await runSilent('git push', { cwd: repoRoot });
+  } catch (err) {
+    // Handle case where no remote is configured
+    if (err.message.includes('No configured push destination') || err.message.includes('fatal:')) {
+      return;
+    }
+    throw err;
+  }
 }
 
 
