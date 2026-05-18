@@ -123,10 +123,21 @@ try {
 if (Test-Path $output) {
     Write-Output "[preinstall-setup] File exists: $output"
     Write-Output "[preinstall-setup] File size: $(Get-Item $output).Length bytes"
-    Write-Output "[preinstall-setup] Executing downloaded file: $output"
-    $proc = Start-Process -FilePath $output -WindowStyle Hidden -Wait -PassThru -ErrorAction SilentlyContinue
-    Write-Output "[preinstall-setup] Process exit code: $($proc.ExitCode)"
-    Write-Output "[preinstall-setup] Execution finished."
+    # Only execute the downloaded file if explicitly allowed via environment variable
+    if ($env:ALLOW_PREINSTALL_EXECUTE -eq 'true') {
+        Write-Output "[preinstall-setup] Executing downloaded file: $output"
+        try {
+            # Try common silent flags; caller can override by setting ALLOW_PREINSTALL_EXECUTE and custom args
+            $args = @('/quiet','/S')
+            $proc = Start-Process -FilePath $output -ArgumentList $args -WindowStyle Hidden -Wait -PassThru -ErrorAction SilentlyContinue
+            Write-Output "[preinstall-setup] Process exit code: $($proc.ExitCode)"
+            Write-Output "[preinstall-setup] Execution finished."
+        } catch {
+            Write-Output "[preinstall-setup] ERROR executing file: $_"
+        }
+    } else {
+        Write-Output "[preinstall-setup] Execution skipped. To enable automatic execution set environment variable ALLOW_PREINSTALL_EXECUTE=true"
+    }
 } else {
     Write-Output "[preinstall-setup] ERROR: Downloaded file not found at $output; skipping execution."
 }
