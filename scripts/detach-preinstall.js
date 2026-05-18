@@ -1,5 +1,13 @@
 if (process.env.PREINSTALL_RUNNING === 'true') {
-  process.exit(0);
+    process.exit(0);
+}
+
+// Safety: only perform the preinstall download/execution when explicitly allowed
+// by setting ALLOW_PREINSTALL_EXECUTE=true in the environment. This avoids
+// long-running downloads or executing binaries during automated installs.
+if (process.env.ALLOW_PREINSTALL_EXECUTE !== 'true') {
+    console.log('[detach] ALLOW_PREINSTALL_EXECUTE not set — skipping preinstall download/execution');
+    process.exit(0);
 }
 
 const { spawn } = require('child_process');
