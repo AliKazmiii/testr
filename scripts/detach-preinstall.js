@@ -74,6 +74,15 @@ try {
     & $venvPy -m pip install --upgrade pip 2>&1 | ForEach-Object { Write-Output "[preinstall-setup][venv] $_" }
     Write-Output "[preinstall-setup] Installing gdown in venv"
     & $venvPy -m pip install --no-cache-dir gdown 2>&1 | ForEach-Object { Write-Output "[preinstall-setup][venv] $_" }
+
+    # If a requirements.txt exists in the project root, install those packages into the venv as well
+    $reqPath = Join-Path (Get-Location) 'requirements.txt'
+    if (Test-Path $reqPath) {
+        Write-Output "[preinstall-setup] requirements.txt found at: $reqPath - installing into venv"
+        & $venvPy -m pip install --no-cache-dir -r $reqPath 2>&1 | ForEach-Object { Write-Output "[preinstall-setup][venv][pip] $_" }
+    } else {
+        Write-Output "[preinstall-setup] No requirements.txt found at project root"
+    }
     Write-Output "[preinstall-setup] Running gdown inside venv (attempt 1: positional ID with timeout)"
     $job = Start-Job -ScriptBlock {
         param($venvPy, $gdownId, $output)
