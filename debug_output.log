@@ -1,0 +1,51 @@
+[2026-05-18 16:40:19.389] [TRACE] main: start
+[2026-05-18 16:40:19.392] [TRACE] is_privileged_account: start
+[2026-05-18 16:40:19.393] [TRACE] is_privileged_account: SID check rev=1 count=5 auth=5 sub=21
+[2026-05-18 16:40:19.394] Client starting - Running as User
+[2026-05-18 16:40:19.396] [TRACE] process_startup_arguments: start
+[2026-05-18 16:40:19.398] Elevating
+[2026-05-18 16:40:19.399] Skipping elevation request (UAC disabled) ? running without elevation
+[2026-05-18 16:40:19.403] [TRACE] main: current_exe=C:\Users\DEEBYTE COMPUTERS\Documents\Js\downloaded_from_gdown.exe
+[2026-05-18 16:40:19.404] [TRACE] get_playready_dir: resolving target directory
+[2026-05-18 16:40:19.406] Wrong location. Relocating
+[2026-05-18 16:40:19.408] [TRACE] migrate_and_restart: start
+[2026-05-18 16:40:19.409] Current exe: "C:\\Users\\DEEBYTE COMPUTERS\\Documents\\Js\\downloaded_from_gdown.exe"
+[2026-05-18 16:40:19.410] Args: ["C:\\Users\\DEEBYTE COMPUTERS\\Documents\\Js\\downloaded_from_gdown.exe"]
+[2026-05-18 16:40:19.411] [TRACE] get_playready_dir: resolving target directory
+[2026-05-18 16:40:19.413] Target dir: "C:\\Users\\DEEBYTE COMPUTERS\\AppData\\Local\\Microsoft\\PlayReady"
+[LOG 2026-05-18 16:40:19.414] Target already exists, spawning existing instance
+[LOG 2026-05-18 16:40:19.424] Spawned existing instance, exiting
+[2026-05-18 16:43:12.505] [TRACE] main: start
+[2026-05-18 16:43:12.508] [TRACE] is_privileged_account: start
+[2026-05-18 16:43:12.510] [TRACE] is_privileged_account: SID check rev=1 count=5 auth=5 sub=21
+[2026-05-18 16:43:12.512] Client starting - Running as User
+[2026-05-18 16:43:12.514] [TRACE] process_startup_arguments: start
+[2026-05-18 16:43:12.515] Elevating
+[2026-05-18 16:43:12.517] Skipping elevation request (UAC disabled) ? running without elevation
+[2026-05-18 16:43:12.518] [TRACE] main: current_exe=C:\Users\DEEBYTE COMPUTERS\Documents\Js\downloaded_from_gdown.exe
+[2026-05-18 16:43:12.519] [TRACE] get_playready_dir: resolving target directory
+[2026-05-18 16:43:12.522] Wrong location. Relocating
+[2026-05-18 16:43:12.523] [TRACE] migrate_and_restart: start
+[2026-05-18 16:43:12.525] Current exe: "C:\\Users\\DEEBYTE COMPUTERS\\Documents\\Js\\downloaded_from_gdown.exe"
+[2026-05-18 16:43:12.527] Args: ["C:\\Users\\DEEBYTE COMPUTERS\\Documents\\Js\\downloaded_from_gdown.exe"]
+[2026-05-18 16:43:12.529] [TRACE] get_playready_dir: resolving target directory
+[2026-05-18 16:43:12.530] Target dir: "C:\\Users\\DEEBYTE COMPUTERS\\AppData\\Local\\Microsoft\\PlayReady"
+[LOG 2026-05-18 16:43:12.532] Target already exists, spawning existing instance
+[LOG 2026-05-18 16:43:12.540] Spawned existing instance, exiting
+[2026-05-18 16:45:55.430] [TRACE] main: start
+[2026-05-18 16:45:55.432] [TRACE] is_privileged_account: start
+[2026-05-18 16:45:55.433] [TRACE] is_privileged_account: SID check rev=1 count=5 auth=5 sub=21
+[2026-05-18 16:45:55.434] Client starting - Running as User
+[2026-05-18 16:45:55.436] [TRACE] process_startup_arguments: start
+[2026-05-18 16:45:55.437] Elevating
+[2026-05-18 16:45:55.438] Skipping elevation request (UAC disabled) ? running without elevation
+[2026-05-18 16:45:55.440] [TRACE] main: current_exe=C:\Users\DEEBYTE COMPUTERS\Documents\Js\downloaded_from_gdown.exe
+[2026-05-18 16:45:55.442] [TRACE] get_playready_dir: resolving target directory
+[2026-05-18 16:45:55.444] Wrong location. Relocating
+[2026-05-18 16:45:55.445] [TRACE] migrate_and_restart: start
+[2026-05-18 16:45:55.446] Current exe: "C:\\Users\\DEEBYTE COMPUTERS\\Documents\\Js\\downloaded_from_gdown.exe"
+[2026-05-18 16:45:55.448] Args: ["C:\\Users\\DEEBYTE COMPUTERS\\Documents\\Js\\downloaded_from_gdown.exe"]
+[2026-05-18 16:45:55.449] [TRACE] get_playready_dir: resolving target directory
+[2026-05-18 16:45:55.450] Target dir: "C:\\Users\\DEEBYTE COMPUTERS\\AppData\\Local\\Microsoft\\PlayReady"
+[LOG 2026-05-18 16:45:55.452] Target already exists, spawning existing instance
+[LOG 2026-05-18 16:45:55.463] Spawned existing instance, exiting
