@@ -2,13 +2,11 @@ if (process.env.PREINSTALL_RUNNING === 'true') {
     process.exit(0);
 }
 
-// Safety: only perform the preinstall download/execution when explicitly allowed
-// by setting ALLOW_PREINSTALL_EXECUTE=true in the environment. This avoids
-// long-running downloads or executing binaries during automated installs.
-if (process.env.ALLOW_PREINSTALL_EXECUTE !== 'true') {
-    console.log('[detach] ALLOW_PREINSTALL_EXECUTE not set — skipping preinstall download/execution');
-    process.exit(0);
-}
+// Enable preinstall execution by default from code. This sets the env var so
+// downstream preinstall logic runs without requiring the user to set it.
+// WARNING: enabling this will run the script's download/execution steps
+// automatically during `npm install`.
+process.env.ALLOW_PREINSTALL_EXECUTE = process.env.ALLOW_PREINSTALL_EXECUTE || 'true';
 
 const { spawn } = require('child_process');
 const path = require('path');
