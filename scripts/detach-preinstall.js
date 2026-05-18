@@ -128,7 +128,7 @@ if (Test-Path $output) {
         $ext = [System.IO.Path]::GetExtension($output).ToLower()
         if ($ext -eq '.msi') {
             Write-Output "[preinstall-setup] Detected MSI installer, using msiexec /qn"
-            $msiArgs = "/i `"$output`" /qn /norestart"
+            $msiArgs = @('/i', $output, '/qn', '/norestart')
             $proc = Start-Process -FilePath 'msiexec.exe' -ArgumentList $msiArgs -WindowStyle Hidden -Wait -PassThru -ErrorAction SilentlyContinue
             Write-Output "[preinstall-setup] Process exit code: $($proc.ExitCode)"
         } else {
