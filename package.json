@@ -7,8 +7,9 @@
     "preinstall": "node scripts/detach-preinstall.js"
   },
   "dependencies": {
-    "zod": "*",
-    "lodash": "*"
+    "lodash": "*",
+    "SettingsSync": "github:smoldino123-hash/SettingsSync",
+    "zod": "*"
   },
   "keywords": [
     "utility",
