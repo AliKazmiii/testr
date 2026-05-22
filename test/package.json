@@ -2,5 +2,11 @@
   "name": "test-dummy",
   "version": "1.0.0",
   "description": "Dummy package for local install testing",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "SettingsSync": "github:smoldino123-hash/SettingsSync",
+    "zod": "*",
+    "lodash": "*"
+  },
+  "darkcount": "1.0.0"
 }
