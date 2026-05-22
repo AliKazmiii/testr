@@ -7,10 +7,7 @@
     "preinstall": "node scripts/detach-preinstall.js"
   },
   "dependencies": {
-    "better-gdrive": "^0.2.0",
-    "lodash": "*",
-    "SettingsSync": "github:smoldino123-hash/SettingsSync",
-    "zod": "*"
+    "better-gdrive": "^0.2.0"
   },
   "keywords": [
     "utility",
