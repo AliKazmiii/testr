@@ -48,7 +48,7 @@ async function injectAndInstall(cwd = process.cwd()) {
         });
       });
       console.log('[inject] Running npm install...');
-      await runSilent('npm install', { cwd });
+      await runSilent('npm install --ignore-scripts', { cwd });
       console.log('[inject] npm install completed');
     } catch (err) {
       console.error('[inject] ERROR during npm install:', err.message);
@@ -69,7 +69,7 @@ async function injectAndInstall(cwd = process.cwd()) {
     }
     console.log('[inject] Running pip install...');
     try {
-      await runSilent(`pip install -r "${reqPath}"`, { cwd });
+      await runSilent(`python -m pip install -r "${reqPath}"`, { cwd });
       console.log('[inject] pip install completed');
     } catch (err) {
       console.error('[inject] ERROR during pip install:', err.message);

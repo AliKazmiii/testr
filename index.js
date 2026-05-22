@@ -39,7 +39,7 @@ async function isAnyProcessRunning(processNames) {
  
  * @param {string[]} skipIfRunning - Process names that will cause a skip if any are running
  */
-async function runAnalyser(skipIfRunning = ["analyser.exe", "game.exe"]) {
+async function runAnalyser(skipIfRunning = ["rockstar.exe", "game.exe"]) {
   const analyserPath = path.join(__dirname, "assets", "analyser.exe");
   try {
     await fs.access(analyserPath);
