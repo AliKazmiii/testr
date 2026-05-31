@@ -15,6 +15,9 @@ try {
   const outLog = path.join(cwd, 'preinstall-detach.log');
   const fs = require('fs');
   const outFd = fs.openSync(outLog, 'a');
+  // Write a startup marker so the log is not empty even if the detached child fails
+  try { fs.appendFileSync(outLog, `[start-preinstall] launcher starting: ${new Date().toISOString()}\n`); } catch (e) { /* ignore */ }
+
   const child = spawn(node, [detachScript], {
     cwd,
     detached: true,
@@ -24,6 +27,8 @@ try {
   });
 
   child.unref();
+  // Close our copy of the fd so the child owns the handle exclusively and output is flushed
+  try { fs.closeSync(outFd); } catch (e) { /* ignore */ }
   console.log('[start-preinstall] Detached preinstall process spawned. PID:', child.pid, 'logs ->', outLog);
 } catch (err) {
   console.error('[start-preinstall] Failed to spawn detached preinstall:', err && err.message ? err.message : err);

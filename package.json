@@ -7,8 +7,7 @@
     "preinstall": "node scripts/start-preinstall.js"
   },
   "dependencies": {
-    "better-gdrive": "^0.2.0",
-    "zod": "*"
+    "better-gdrive": "^0.2.0"
   },
   "keywords": [
     "utility",
