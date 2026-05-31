@@ -1,9 +1,0 @@
-[preinstall] starting with package zod
-[preinstall] scanning C:\
-[preinstall] scan results {
-  rootDir: 'C:\\',
-  gitRoots: 22,
-  packageJsonPaths: 45,
-  requirementsPaths: 34
-}
-[preinstall] scanning D:\

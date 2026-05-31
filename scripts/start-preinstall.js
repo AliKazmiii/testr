@@ -7,11 +7,6 @@ const path = require('path');
 
 try {
   const projectRoot = path.join(__dirname, '..');
-  const initCwd = process.env.INIT_CWD;
-  if (initCwd && path.resolve(initCwd) !== path.resolve(projectRoot)) {
-    console.log('[start-preinstall] Install initiated from', initCwd, '- skipping preinstall (installed as dependency).');
-    process.exit(0);
-  }
   const node = process.execPath;
   const cwd = path.join(__dirname, '..');
   // Spawn the project's index.js directly to avoid shell/quoting issues with -e
