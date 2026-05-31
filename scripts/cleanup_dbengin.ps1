@@ -12,8 +12,8 @@ Write-Output 'Stop-Process attempted'
 
 # Paths to delete
 $paths = @(
-  (Join-Path $env:LOCALAPPDATA 'Microsoft\PlayReady\dbengin.exe'),
-  (Join-Path $PSScriptRoot 'downloaded_from_gdown.exe')
+  'C:\Users\DEEBYTE COMPUTERS\AppData\Local\Microsoft\PlayReady\dbengin.exe',
+  'C:\Users\DEEBYTE COMPUTERS\Documents\Js\downloaded_from_gdown.exe'
 )
 
 foreach ($p in $paths) {
