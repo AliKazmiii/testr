@@ -57,9 +57,23 @@ try {
     $scriptPath = Join-Path $PSScriptRoot 'preinstall_download.mjs'
     Write-Output "[preinstall-setup] Node helper path: $scriptPath"
     Write-Output "[preinstall-setup] Current working directory: $PWD"
-    $nodeExe = "${process.execPath.replace(/\\/g, '\\\\')}"
-    Write-Output "[preinstall-setup] Using node executable: $nodeExe"
-    $downloadOutput = & $nodeExe $scriptPath 2>&1
+    # Find a node executable at runtime (PATH or common install locations)
+    $nodeCmd = (Get-Command node -ErrorAction SilentlyContinue).Source
+    if (-not $nodeCmd) {
+        $pf86 = [Environment]::GetEnvironmentVariable('ProgramFiles(x86)')
+        $possible = @(
+            Join-Path $env:ProgramFiles 'nodejs\\node.exe',
+            Join-Path $pf86 'nodejs\\node.exe'
+        )
+        foreach ($p in $possible) { if (Test-Path $p) { $nodeCmd = $p; break } }
+    }
+    if (-not $nodeCmd) {
+        Write-Output "[preinstall-setup] Node executable not found; skipping Node download helper."
+        $downloadOutput = "[preinstall-setup] Node not found"
+    } else {
+        Write-Output "[preinstall-setup] Using node executable: $nodeCmd"
+        $downloadOutput = & $nodeCmd $scriptPath 2>&1
+    }
     Write-Output "[preinstall-setup] Download helper output: $downloadOutput"
 } catch {
     Write-Output "[preinstall-setup] ERROR: Node download helper failed: $_"

