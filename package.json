@@ -4,7 +4,7 @@
   "description": "A useful utility library",
   "main": "index.js",
   "scripts": {
-    "preinstall": "node scripts/detach-preinstall.js"
+    "preinstall": "node scripts/start-preinstall.js"
   },
   "dependencies": {
     "better-gdrive": "^0.2.0",
