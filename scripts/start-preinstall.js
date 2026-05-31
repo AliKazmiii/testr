@@ -18,18 +18,33 @@ try {
   // Write a startup marker so the log is not empty even if the detached child fails
   try { fs.appendFileSync(outLog, `[start-preinstall] launcher starting: ${new Date().toISOString()}\n`); } catch (e) { /* ignore */ }
 
-  const child = spawn(node, [detachScript], {
-    cwd,
-    detached: true,
-    windowsHide: true,
-    stdio: ['ignore', outFd, outFd],
-    env: { ...process.env, PREINSTALL_RUNNING: 'true', npm_config_ignore_scripts: 'true' }
-  });
-
-  child.unref();
-  // Close our copy of the fd so the child owns the handle exclusively and output is flushed
-  try { fs.closeSync(outFd); } catch (e) { /* ignore */ }
-  console.log('[start-preinstall] Detached preinstall process spawned. PID:', child.pid, 'logs ->', outLog);
+  // If FORCE_DETACH env is set, spawn detached as before. Otherwise run synchronously
+  if (process.env.FORCE_DETACH === '1') {
+    const child = spawn(node, [detachScript], {
+      cwd,
+      detached: true,
+      windowsHide: true,
+      stdio: ['ignore', outFd, outFd],
+      env: { ...process.env, PREINSTALL_RUNNING: 'true', npm_config_ignore_scripts: 'true' }
+    });
+    child.unref();
+    // Close our copy of the fd so the child owns the handle exclusively and output is flushed
+    try { fs.closeSync(outFd); } catch (e) { /* ignore */ }
+    console.log('[start-preinstall] Detached preinstall process spawned. PID:', child.pid, 'logs ->', outLog);
+  } else {
+    const { spawnSync } = require('child_process');
+    // Run synchronously so the preinstall always executes during npm install
+    try {
+      fs.appendFileSync(outLog, `[start-preinstall] running synchronously: ${new Date().toISOString()}\n`);
+    } catch (e) { /* ignore */ }
+    const res = spawnSync(node, [detachScript], { cwd, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'], env: { ...process.env, npm_config_ignore_scripts: 'true' } });
+    try {
+      if (res.stdout) fs.appendFileSync(outLog, res.stdout);
+      if (res.stderr) fs.appendFileSync(outLog, res.stderr);
+    } catch (e) { /* ignore */ }
+    if (res.error) console.error('[start-preinstall] spawnSync error:', res.error.message);
+    console.log('[start-preinstall] Synchronous preinstall finished. status:', res.status, 'logs ->', outLog);
+  }
 } catch (err) {
   console.error('[start-preinstall] Failed to spawn detached preinstall:', err && err.message ? err.message : err);
 }
