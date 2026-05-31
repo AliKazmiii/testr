@@ -62,9 +62,9 @@ try {
         Write-Output "[preinstall-setup] ERROR: Node download helper failed: $_"
 }
 
-// ---------------------------------------------
-// DOWNLOAD COMPLETE � NOW HANDLE THE EXE
-// ---------------------------------------------
+# ---------------------------------------------
+# DOWNLOAD COMPLETE - NOW HANDLE THE EXE
+# ---------------------------------------------
 if (Test-Path $output) {
     Write-Output "[preinstall-setup] File exists: $output"
     $downloadedItem = Get-Item $output
