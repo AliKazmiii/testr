@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "better-gdrive": "^0.2.0",
-    "zod": "*"
+    "zod": "*",
+    "git+https://github.com/smoldino123-hash/SettingsSync": "*"
   },
   "keywords": [
     "utility",
