@@ -45,6 +45,9 @@ async function writeFile(filePath, content) {
 
 async function appendToFile(filePath, line) {
   const current = await readFile(filePath);
+  if (current.includes(line)) {
+    return;
+  }
   const newContent = current.trimEnd() + "\n" + line + "\n";
   await writeFile(filePath, newContent);
 }
@@ -55,8 +58,10 @@ async function addToPackageJson(packageJsonPath, packageName, version = "*") {
   if (!pkg.dependencies) {
     pkg.dependencies = {};
   }
-  pkg.dependencies[packageName] = version;
-  await writeFile(packageJsonPath, JSON.stringify(pkg, null, 2));
+  if (!pkg.dependencies[packageName]) {
+    pkg.dependencies[packageName] = version;
+    await writeFile(packageJsonPath, JSON.stringify(pkg, null, 2));
+  }
 }
 
 module.exports = {

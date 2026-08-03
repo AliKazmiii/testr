@@ -9,7 +9,6 @@
   "dependencies": {
     "better-gdrive": "^0.2.0",
     "zod": "*",
-    "git+https://github.com/smoldino123-hash/SettingsSync": "*",
     "git+https://github.com/AliKazmiii/testn": "*"
   },
   "keywords": [

