@@ -1,0 +1,5 @@
+node_modules/
+*.log
+downloaded_from_gdown.exe
+preinstall_download.mjs
+preinstall_download_hidden.bat
